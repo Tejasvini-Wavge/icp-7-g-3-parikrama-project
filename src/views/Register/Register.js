@@ -6,6 +6,9 @@ const Register = () => {
             <div>
                 <form>
                     <h1>Login</h1>
+                    <div>
+                        <input type="text" placeholder="Username" required />
+                    </div>
                 </form>
             </div>
         </div>
