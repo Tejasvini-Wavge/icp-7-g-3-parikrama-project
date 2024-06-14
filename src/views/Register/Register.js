@@ -3,25 +3,26 @@ import "./Register.css"
 const Register = () => {
     return (
         <div className="wrapper">
-            <div>
-                <form>
+            <div className="form-box login">
+                <form action="">
                     <h1>Login</h1>
-                    <div>
+                    <div className="input-box">
                         <input type="text" placeholder="Username" required />
                     </div>
-                    <div>
+                    <div className="input-box">
                         <input type="password" placeholder="Password" required />
                     </div>
-                    <div>
+                    <div className="remenber-forgot">
                         <label>
                             <input type="checkbox"/>Remember me 
                         </label>
-                        <a href="#">Forgot password</a>
+                        <a href="#">forgot password</a>
+                        
                     </div>
 
-                    <button type="submit">Login</button>
+                    <button type="submit" className="btn">Login</button>
 
-                    <div>
+                    <div className="register-link">
                         <p>Don't have an account? <a href="#">Register</a></p>
                     </div>
                 </form>
