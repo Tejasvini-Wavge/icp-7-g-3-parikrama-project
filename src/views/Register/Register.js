@@ -2,7 +2,7 @@ import "./Register.css"
 
 const Register = () => {
     return (
-        <div>
+        <div className="wrapper">
             <div>
                 <form>
                     <h1>Login</h1>
@@ -17,6 +17,12 @@ const Register = () => {
                             <input type="checkbox"/>Remember me 
                         </label>
                         <a href="#">Forgot password?</a>
+                    </div>
+
+                    <button type="submit">Login</button>
+
+                    <div>
+                        <p>Don't have an account? <a href="#">Register</a></p>
                     </div>
                 </form>
             </div>
