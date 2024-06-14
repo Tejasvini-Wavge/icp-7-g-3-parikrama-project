@@ -9,6 +9,9 @@ const Register = () => {
                     <div>
                         <input type="text" placeholder="Username" required />
                     </div>
+                    <div>
+                        <input type="password" placeholder="Password" required />
+                    </div>
                 </form>
             </div>
         </div>
