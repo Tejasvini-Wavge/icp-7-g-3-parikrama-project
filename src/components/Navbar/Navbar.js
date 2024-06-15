@@ -16,7 +16,7 @@ function Navbar() {
          <Link to="/cars" className='nav-item'>Cars</Link>
        </div>
        <div className='icon-container'>
-<button className='register-btn'>Register</button>
+<Link to='/Register'><button className='register-btn'>Register</button></Link>
        </div>
     </div>
   )
