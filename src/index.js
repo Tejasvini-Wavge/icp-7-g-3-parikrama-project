@@ -5,6 +5,7 @@ import Register from './views/Register/Register';
 import Hotels from './views/Hotels/Hotels';
 import Home from './views/Stays/Stays';
 import Cars from './views/Cars/Cars'
+import Rental from './views/Rental/Rental';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
@@ -20,10 +21,10 @@ const router = createBrowserRouter([
 //       element:<Flights/>
 //   },
  
-// {
-//   path: "/Rental",
-//   element:<Rental/>
-// },
+ {
+   path: "/Rental",
+   element:<Rental/>
+ },
 {
   path: "/Cars",
   element:<Cars/>
