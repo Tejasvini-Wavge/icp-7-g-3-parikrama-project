@@ -1,0 +1,16 @@
+.card{
+    display:inline-block;
+    height:400px;
+    width:300px;
+    border:5px solid black;
+
+}
+.description{
+    padding-left:10px;
+    padding-right:10px;
+}
+
+
+.container{
+    display:flex;
+}
