@@ -34,7 +34,7 @@ function Footer() {
           <li>Our Secret Island Boat Tour Is Just for You</li>
           <li>Chill and Escape in Our Natural Shelters</li>
           <li>September in Sunrise Avenue</li>
-          <li>Live Music Concerts at Sunrise Avenue</li>
+          <li>Live Music Concerts at Parikrama</li>
         </ul>
         
         </div> 
