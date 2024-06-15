@@ -4,7 +4,9 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import Register from './views/Register/Register';
 import Hotels from './views/Hotels/Hotels';
 import Home from './views/Stays/Stays';
-import Cars from './views/Cars/Cars'
+import Cars from './views/Cars/Cars';
+import Rental from './views/Rental/Rental';
+import Flights from './views/Flights/Flights';
 
 
 
