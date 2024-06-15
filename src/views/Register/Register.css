@@ -29,7 +29,6 @@
     position: absolute;
     transition: none;
     translate: 400px;
-    width: 350px;
 }
 .wrapper.active .form-box.register {
     transition: translate .18s ease;
