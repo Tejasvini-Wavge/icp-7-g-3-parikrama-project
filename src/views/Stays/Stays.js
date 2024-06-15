@@ -7,6 +7,7 @@ function Stays() {
   return (
     <>
     <Navbar className="navbar" />
+    
     <div  className='background'>
       
     </div>
