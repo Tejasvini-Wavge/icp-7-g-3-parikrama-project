@@ -2,7 +2,7 @@ import ReactDOM from 'react-dom/client';
 import './index.css'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import Register from './views/Register/Register';
-import Home from './views/Stays/Stays'
+import Home from './views/Stays/Stays';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));

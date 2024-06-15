@@ -7,7 +7,7 @@ import Connect1 from './connect1.png';
 import Connect2 from './connect2.png';
 import Connect3 from './connect3.png';
 import Connect4 from './connect4.png';
-import './footer.css'
+import './Footer.css'
 
 
 function Footer() {
