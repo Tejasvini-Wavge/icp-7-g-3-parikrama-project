@@ -1,3 +1,27 @@
+.background-img{
+    background-image: url('./R.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh; 
+}
+
+.heading-text{
+    align-items: center;
+    text-align: center;
+    margin-top:10px;
+    color:white;
+    font-size: 30px;
+}
+
+.heading-hotels{
+    color: solid black;
+    text-align: center;
+    font-size: 40px;
+}
+
+
 .card{
     display:inline-block;
     height:400px;
