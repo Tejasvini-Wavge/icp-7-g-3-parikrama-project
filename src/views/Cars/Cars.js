@@ -3,6 +3,24 @@ import Navbar from '../../components/Navbar/Navbar';
 import Footer from '../../components/Footer/Footer';
 import './../../views/Cars/Cars.css'
 
+import carImage1 from './../../img/hotel-.webp';
+import carImage2 from './../../img/hotel-.webp';
+import carImage3 from './../../img/hotel-.webp';
+import carImage4 from './../../img/hotel-.webp';
+import carImage5 from './../../img/hotel-.webp';
+import carImage6 from './../../img/hotel-.webp';
+
+
+const carData = [
+  { id: 1, model: "Carmy Accord", image: carImage1, discount: "600Kms included. After that $1/km", type: "SEDAN | AC | 5 Seats" },
+  { id: 2, model: "Audi, BMW", image: carImage2, discount: "600Kms included. After that $1/km", type: "Hatchback | AC | 5 Seats" },
+  { id: 3, model: "Ertiga, Xylo", image: carImage3, discount: "600Kms included. After that $1/km", type: "LUX | AC | 5 Seats" },
+  { id: 4, model: "Suv, Innova Crysta", image: carImage4, discount: "600Kms included. After that $1/km", type: "SUV | AC | 5 Seats" },
+  { id: 5, model: "Toyota Aygo", image: carImage5, discount: "600Kms included. After that $1/km", type: "SEDAN | AC | 5 Seats" },
+  { id: 6, model: "Ford Focus", image: carImage6, discount: "600Kms included. After that $1/km", type: "LUX | AC | 5 Seats" },
+];
+
+
 
 
 
@@ -20,7 +38,7 @@ const Cars = () => {
                     </div>
                 </div>
             </header>
-            <div className="deals">
+            <section className="deals">
                 <div className="deal-card">
                     <div className="discount">20% Off</div>
                     <img src="los-angeles.jpg" alt="Los Angeles" />
@@ -48,7 +66,41 @@ const Cars = () => {
                         <p>From <span>$569 - $799</span></p>
                     </div>
                 </div>
-            </div>
+            </section>
+            <section className="vehicles">
+                <h2>Our Awesome Vehicles</h2>
+                <p>Cicero famously orated against his political opponent Lucius Sergius Catilina.</p>
+                
+                <div className="vehicles-row">
+                    {carData.map(car => (
+                        <div className="vehicle-card" key={car.id}>
+                            <div className="vehicle-discount">{car.discount}</div>
+                            <img src={car.image} alt={car.model} />
+                            <h3>{car.model}</h3>
+                            <p>{car.type}</p>
+                            <div className="vehicle-info">
+                                <div className="cancellation">Free Cancellation Till 10 Aug '23</div>
+                                <div className="tags">
+                                    <span>Manual</span>
+                                    <span>1 Large bag</span>
+                                    <span>1 Small bag</span>
+                                    <span>Diesel</span>
+                                </div>
+                                <div className="price">
+                                    <span>15% Off</span>
+                                    <span className="price-value">US$59 <s>US$79</s></span>
+                                </div>
+                                <div className="rating">
+                                    <span>Exceptional</span>
+                                    <span>3,014 reviews</span>
+                                    <span className="rating-value">4.8</span>
+                                </div>
+                            </div>
+                        </div>
+                    ))}
+                </div>
+                <button className="explore-more">Explore More</button>
+            </section>
         </div>
     );
 }
