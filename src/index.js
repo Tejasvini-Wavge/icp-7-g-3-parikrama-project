@@ -21,7 +21,7 @@ const router = createBrowserRouter([
   //   {
   //     path: "/flights",
   //     element:<Flights/>
-  // }
+  // },
 //   {
 //     path: "/hotels",
 //     element:<Hotels/>
@@ -37,7 +37,7 @@ const router = createBrowserRouter([
 //   path: "/register",
 //   element:<Register/>
     {
-        path: "/",
+        path: "/Register",
         element: <Register/>
     },
 
