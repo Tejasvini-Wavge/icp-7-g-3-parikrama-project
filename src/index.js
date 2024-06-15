@@ -4,6 +4,7 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import Register from './views/Register/Register';
 import Hotels from './views/Hotels/Hotels';
 import Home from './views/Stays/Stays';
+import Rental from './views/Rental/Rental';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
@@ -22,10 +23,10 @@ const router = createBrowserRouter([
     path: "/Hotels",
     element:<Hotels/>
 },
-// {
-//   path: "/Rental",
-//   element:<Rental/>
-// },
+ {
+   path: "/Rental",
+   element:<Rental/>
+ },
 // {
 //   path: "/Cars",
 //   element:<Cars/>
