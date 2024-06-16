@@ -2,6 +2,7 @@ import { Link } from "react-router-dom"
 import "./Register.css"
 import { useState } from "react"
 import Navbar from "../../components/Navbar/Navbar";
+import Footer from "./../../components/Footer/Footer"
 
 const Register = () => {
 
@@ -15,7 +16,8 @@ const Register = () => {
     }
     return (
         <div>
-            <Navbar/>
+            <Navbar />
+            <header className="back-imag">
             <div className={`wrapper ${action}`}>
                 <div className="form-box login">
                     <form action="">
@@ -70,6 +72,8 @@ const Register = () => {
                     </form>
                 </div>
             </div>
+            </header>
+            <Footer/>
         </div>
     )
 }
