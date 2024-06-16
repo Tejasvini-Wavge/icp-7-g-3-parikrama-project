@@ -3,23 +3,27 @@ import Navbar from '../../components/Navbar/Navbar';
 import Footer from '../../components/Footer/Footer';
 import './../../views/Cars/Cars.css';
 
-import carImage1 from './../../img/hotel-.webp';
-import carImage2 from './../../img/hotel-.webp';
-import carImage3 from './../../img/hotel-.webp';
-import carImage4 from './../../img/hotel-.webp';
-import carImage5 from './../../img/hotel-.webp';
-import carImage6 from './../../img/hotel-.webp';
+import carImage1 from './../Cars/image/accord.jpg';
+import carImage2 from './../Cars/image/BMW.jpg';
+import carImage3 from './../Cars/image/tesla.jpg';
+import carImage4 from './../Cars/image/audi.jpg';
+import carImage5 from './../Cars/image/Toyota Aygo.jpg';
+import carImage6 from './../Cars/image/Ford Focus.jpg';
+
 
 const carData = [
-  { id: 1, model: "Carmy Accord", image: carImage1, discount: "600Kms included. After that $1/km", type: "SEDAN | AC | 5 Seats" },
-  { id: 2, model: "Audi, BMW", image: carImage2, discount: "600Kms included. After that $1/km", type: "Hatchback | AC | 5 Seats" },
-  { id: 3, model: "Ertiga, Xylo", image: carImage3, discount: "600Kms included. After that $1/km", type: "LUX | AC | 5 Seats" },
-  { id: 4, model: "Suv, Innova Crysta", image: carImage4, discount: "600Kms included. After that $1/km", type: "SUV | AC | 5 Seats" },
+  { id: 1, model: "Honda Accord", image: carImage1, discount: "600Kms included. After that $1/km", type: "SEDAN | AC | 5 Seats" },
+  { id: 2, model: " BMW", image: carImage2, discount: "600Kms included. After that $1/km", type: "Hatchback | AC | 5 Seats" },
+  { id: 3, model: "Tesla", image: carImage3, discount: "600Kms included. After that $1/km", type: "LUX | AC | 5 Seats" },
+  { id: 4, model: "Audi", image: carImage4, discount: "600Kms included. After that $1/km", type: "SUV | AC | 5 Seats" },
   { id: 5, model: "Toyota Aygo", image: carImage5, discount: "600Kms included. After that $1/km", type: "SEDAN | AC | 5 Seats" },
   { id: 6, model: "Ford Focus", image: carImage6, discount: "600Kms included. After that $1/km", type: "LUX | AC | 5 Seats" },
 ];
 
+
+
 const destinationData = [
+
   {
     image: '',
     city: 'Chicago',
