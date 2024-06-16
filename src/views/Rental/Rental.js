@@ -79,6 +79,8 @@ function Rental() {
       </div>
     </div>
 
+    <hr></hr>
+
     <div className="app">
       <div className="container1">
         <h1>Explore Hot Rental Properties</h1>
@@ -185,6 +187,8 @@ function Rental() {
       </div>
     </div>
 
+
+
 <hr></hr>
 
     <div className="container">
@@ -224,6 +228,63 @@ function Rental() {
 
     <hr></hr>
 
+    <div className="main-container">
+      <div className="header-section">
+        <h1>Get our top property features</h1>
+      </div>
+      <div className="feature-grid">
+        <div className="feature-card">
+          <div className="icon-wrapper">
+            <svg className="icon" viewBox="0 0 24 24">
+              <path d="M12,21L12,12L10,12L10,21L12,21ZM12,7L12,1L14,1L14,7L12,7ZM12,15L12,7L13,7L13,15L12,15ZM12,13L12,11L11,11L11,13L12,13Z" />
+            </svg>
+          </div>
+          <div className="content-section">
+            <h3>Modern Amenities</h3>
+            <p>Lorem ipsum dolor elit amet enim consecte.</p>
+            <button>→</button>
+          </div>
+        </div>
+        <div className="feature-card">
+          <div className="icon-wrapper">
+            <svg className="icon" viewBox="0 0 24 24">
+            </svg>
+          </div>
+          <div className="content-section">
+            <h3>Security Systems</h3>
+            <p>Lorem ipsum dolor elit amet enim consecte.</p>
+            <button>→</button>
+          </div>
+        </div>
+
+        <div className="feature-card">
+          <div className="icon-wrapper">
+            <svg className="icon" viewBox="0 0 24 24">
+              <path d="M12,2C6.48,2,2,6.48,2,12s4.48,10,10,10s10,-4.48,10,-10S17.52,2,12,2zM12,20c-4.42,0,-8,-3.58,-8,-8s3.58,-8,8,-8s8,3.58,8,8S16.42,20,12,20zM12,14c-1.1,0,-2,-0.9,-2,-2s0.9,-2,2,-2s2,0.9,2,2S13.1,14,12,14z" />
+            </svg>
+          </div>
+          <div className="content-section">
+            <h3>Security Systems</h3>
+            <p>Lorem ipsum dolor elit amet enim consecte.</p>
+            <button>→</button>
+          </div>
+        </div>
+
+         <div className="feature-card">
+          <div className="icon-wrapper">
+            <svg className="icon" viewBox="0 0 24 24">
+              <path d="M12,2C6.48,2,2,6.48,2,12s4.48,10,10,10s10,-4.48,10,-10S17.52,2,12,2zM12,20c-4.42,0,-8,-3.58,-8,-8s3.58,-8,8,-8s8,3.58,8,8S16.42,20,12,20zM12,14c-1.1,0,-2,-0.9,-2,-2s0.9,-2,2,-2s2,0.9,2,2S13.1,14,12,14z" />
+            </svg>
+          </div>
+          <div className="content-section">
+            <h3>Security Systems</h3>
+            <p>Lorem ipsum dolor elit amet enim consecte.</p>
+            <button>→</button>
+          </div>
+        </div>
+       
+      </div>
+    </div>
 
     <div className="app-container">
       <div className="app-header">
