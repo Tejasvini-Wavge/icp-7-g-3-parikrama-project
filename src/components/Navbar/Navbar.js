@@ -17,7 +17,7 @@ function Navbar() {
         ☰
       </div>
       <div className={`nav-item-container ${isOpen ? 'open' : ''}`}>
-        <Link to="/stays" className='nav-item'>Stays</Link>
+        <Link to="/" className='nav-item'>Stays</Link>
         <Link to="/hotels" className='nav-item'>Hotels</Link>
         <Link to="/flights" className='nav-item'>Flights</Link>
         <Link to="/rental" className='nav-item'>Rental</Link>
