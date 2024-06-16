@@ -1,3 +1,4 @@
+/* General styling */
 .cars-container {
   font-family: Arial, sans-serif;
 }
@@ -137,8 +138,6 @@
   box-sizing: border-box;
 }
 
-
-
 .vehicle-discount {
   background-color: #e74c3c;
   color: white;
@@ -242,19 +241,72 @@
   margin-top: 20px;
 }
 
+/* Trending Destinations */
+.trending-destinations {
+  padding: 20px;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+.trending-destinations h2 {
+  font-size: 2rem;
+  color: #333;
+}
+
+.trending-destinations p {
+  color: #666;
+}
+
+.destinations-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.destination-card {
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  overflow: hidden;
+  width: 300px;
+  text-align: center;
+  position: relative;
+}
+
+.destination-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.destination-card h3 {
+  margin: 10px 0;
+  color: #333;
+  font-size: 1.5rem;
+}
+
+.destination-card p {
+  margin: 10px 0;
+  color: #666;
+}
+
 @media (max-width: 768px) {
   .search-box {
       flex-direction: column;
   }
 
   .deals,
-  .vehicles-row {
+  .vehicles-row,
+  .destinations-container {
       flex-direction: column;
       align-items: center;
   }
 
   .deal-card,
-  .vehicle-card {
+  .vehicle-card,
+  .destination-card {
       max-width: 90%;
   }
 }
+
