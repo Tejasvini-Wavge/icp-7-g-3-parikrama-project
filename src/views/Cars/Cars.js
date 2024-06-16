@@ -10,60 +10,34 @@ import carImage4 from './../Cars/image/audi.jpg';
 import carImage5 from './../Cars/image/Toyota Aygo.jpg';
 import carImage6 from './../Cars/image/Ford Focus.jpg';
 
+import chicagoimg from './../../views/Cars/image/chicago.jpg'
+import SanDiegoimg from './../../views/Cars/image/SanDiego.jpg'
+import Lasvegasimg from './../../views/Cars/image/Lasvegas.jpg'
+import NewYorkimg from './../../views/Cars/image/newyork.jpg'
+import SanFranciscoimg from './../../views/Cars/image/SanFrancisco.jpg'
+import NewOrleansimg  from './../../views/Cars/image/NewOrleans.jpg'
+import LosAngelesimg from './../../views/Cars/image/LosAngeles.jpg'
+import Londonimg from './../../views/Cars/image/LonDon.jpg'
+
 
 const carData = [
-  { id: 1, model: "Honda Accord", image: carImage1, discount: "600Kms included. After that $1/km", type: "SEDAN | AC | 5 Seats" },
-  { id: 2, model: " BMW", image: carImage2, discount: "600Kms included. After that $1/km", type: "Hatchback | AC | 5 Seats" },
-  { id: 3, model: "Tesla", image: carImage3, discount: "600Kms included. After that $1/km", type: "LUX | AC | 5 Seats" },
-  { id: 4, model: "Audi", image: carImage4, discount: "600Kms included. After that $1/km", type: "SUV | AC | 5 Seats" },
-  { id: 5, model: "Toyota Aygo", image: carImage5, discount: "600Kms included. After that $1/km", type: "SEDAN | AC | 5 Seats" },
-  { id: 6, model: "Ford Focus", image: carImage6, discount: "600Kms included. After that $1/km", type: "LUX | AC | 5 Seats" },
+  { id: 1, model: "Honda Accord", image: carImage1, discount: "600Kms included. After that $1/km", type: "SEDAN | AC | 5 Seats ", price: 59, originalPrice: 79 },
+  { id: 2, model: " BMW", image: carImage2, discount: "600Kms included. After that $1/km", type: "Hatchback | AC | 5 Seats", price: 69, originalPrice: 89 },
+  { id: 3, model: "Tesla", image: carImage3, discount: "600Kms included. After that $1/km", type: "LUX | AC | 5 Seats", price: 79, originalPrice: 99 },
+  { id: 4, model: "Audi", image: carImage4, discount: "600Kms included. After that $1/km", type: "SUV | AC | 5 Seats", price: 89, originalPrice: 109 },
+  { id: 5, model: "Toyota Aygo", image: carImage5, discount: "600Kms included. After that $1/km", type: "SEDAN | AC | 5 Seats", price: 49, originalPrice: 69 },
+  { id: 6, model: "Ford Focus", image: carImage6, discount: "600Kms included. After that $1/km", type: "LUX | AC | 5 Seats", price: 39, originalPrice: 59 },
 ];
 
-
-
 const destinationData = [
-
-  {
-    image: '',
-    city: 'Chicago',
-    details: '10 Destinations | 5 Cars'
-  },
-  {
-    image: './../../img/san-diego.jpg',
-    city: 'San Diego',
-    details: '10 Destinations | 5 Cars'
-  },
-  {
-    image: './../../img/san-jose.jpg',
-    city: 'San Jose',
-    details: '10 Destinations | 5 Cars'
-  },
-  {
-    image: './../../img/new-york.jpg',
-    city: 'New York',
-    details: '10 Destinations | 5 Cars'
-  },
-  {
-    image: './../../img/san-francisco.jpg',
-    city: 'San Francisco',
-    details: '10 Destinations | 5 Cars'
-  },
-  {
-    image: './../../img/new-orleans.jpg',
-    city: 'New Orleans',
-    details: '10 Destinations | 5 Cars'
-  },
-  {
-    image: './../../img/los-angeles.jpg',
-    city: 'Los Angeles',
-    details: '10 Destinations | 5 Cars'
-  },
-  {
-    image: './../../img/long-beach.jpg',
-    city: 'Long Beach',
-    details: '10 Destinations | 5 Cars'
-  }
+  { image: chicagoimg, city: 'Chicago', details: '10 Destinations | 5 Cars' },
+  { image: SanDiegoimg, city: 'San Diego', details: '10 Destinations | 5 Cars' },
+  { image: Lasvegasimg, city: 'Las vegas', details: '10 Destinations | 5 Cars' },
+  { image: NewYorkimg, city: 'New York', details: '10 Destinations | 5 Cars' },
+  { image: SanFranciscoimg, city: 'San Francisco', details: '10 Destinations | 5 Cars' },
+  { image: NewOrleansimg, city: 'New Orleans', details: '10 Destinations | 5 Cars' },
+  { image: LosAngelesimg, city: 'Los Angeles', details: '10 Destinations | 5 Cars' },
+  { image: Londonimg, city: 'London', details: '10 Destinations | 5 Cars' },
 ];
 
 const Cars = () => {
@@ -123,7 +97,7 @@ const Cars = () => {
                 <h3>{car.model}</h3>
                 <p>{car.type}</p>
                 <div className="vehicle-info">
-                  <div className="cancellation">Free Cancellation Till 10 Aug '23</div>
+                  <div className="cancellation">Free Cancellation Till 18 sep 2024</div>
                   <div className="tags">
                     <span>Manual</span>
                     <span>1 Large bag</span>
@@ -132,12 +106,10 @@ const Cars = () => {
                   </div>
                   <div className="price">
                     <span>15% Off</span>
-                    <span className="price-value">US$59 <s>US$79</s></span>
+                    <span className="price-value">US${car.price} <s>US${car.originalPrice}</s></span>
                   </div>
                   <div className="rating">
-                    <span>Exceptional</span>
-                    <span>3,014 reviews</span>
-                    <span className="rating-value">4.8</span>
+                    <span className="star">★★★★★ 3,014 reviews</span>
                   </div>
                 </div>
               </div>
