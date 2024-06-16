@@ -12,19 +12,18 @@ import citilinkLogo from './images/flt-3.webp';
 import goibiboLogo from './images/goibibo.webp';
 import airIndiaLogo from './images/flt-2.webp';
 import malaysiaAirlinesLogo from './images/flt-1.webp';
+
+import city1 from './images/c-4.webp';
+import city2 from './images/c-6.webp';
+import city3 from './images/c-7.webp';
+import city4 from './images/c-8.webp';
 function Rental() {
  
   return (
     <>
     <Navbar className="navbar" /> 
-
     <div  className='background-rental'></div>
-      
-    
-
-    
-
-    
+   
     <div className="container">
       <div className="card">
         <div className="card-image">
@@ -178,7 +177,8 @@ function Rental() {
       </div>
     </div>
 
-  
+
+   
     
     <Footer className="footer"/>
 
