@@ -1,22 +1,23 @@
 
 .cars-container {
   font-family: Arial, sans-serif;
+ 
 }
 
 .header {
   text-align: center;
-  background: url('./../../img/hotel-.webp') no-repeat center center;
+  background: url('./../../views/Cars/image/carbackground1.jpg') no-repeat center center;
   background-size: cover;
   padding: 50px 20px;
   color: white;
   text-align: center;
-  width: 100%;
-  height: 30vh;
+  width: auto;
+  height: 350px;
 }
 
 .header-content {
   background-color: rgba(0, 0, 0, 0.5);
-  padding: 20px;
+  padding: 100px 80px;
   border-radius: 10px;
 }
 
