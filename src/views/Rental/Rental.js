@@ -177,8 +177,44 @@ function Rental() {
       </div>
     </div>
 
+<hr></hr>
 
-   
+    <div className="container">
+      <div className="card-city">
+        <img src={city2} alt="Destination" className="card-img-top" />
+        <div className="card-body">
+          <h5 className="card-title">Destination</h5>
+          <p className="card-text">Make Your Next Journey Delhi To Paris in Comfirtable And Best Price</p>
+          <a href="#" className="btn ">Read More</a>
+        </div>
+      </div>
+      <div className="card-city">
+        <img src={city3} alt="Journey" className="card-img-top" />
+        <div className="card-body">
+          <h5 className="card-title">Journey</h5>
+          <p className="card-text">Make Your Next Journey Delhi To Paris in Comfirtable And Best Price</p>
+          <a href="#" className="btn ">Read More</a>
+        </div>
+      </div>
+      <div className="card-city">
+        <img src={city1} alt="Business" className="card-img-top" />
+        <div className="card-body">
+          <h5 className="card-title">Business</h5>
+          <p className="card-text">Make Your Next Journey Delhi To Paris in Comfirtable And Best Price</p>
+          <a href="#" className="btn ">Read More</a>
+        </div>
+      </div>
+      <div className="card-city">
+        <img src={city4} alt="Business" className="card-img-top" />
+        <div className="card-body">
+          <h5 className="card-title">Business</h5>
+          <p className="card-text">Make Your Next Journey Delhi To Paris in Comfirtable And Best Price</p>
+          <a href="#" className="btn ">Read More</a>
+        </div>
+      </div>
+    </div>
+
+    <hr></hr>
     
     <Footer className="footer"/>
 
