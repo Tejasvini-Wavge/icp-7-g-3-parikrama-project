@@ -93,7 +93,7 @@ function hotels() {
                 </div>
               </div>
               <div className="price">
-                <span className="discount">15% Off</span>
+               
                 <span>From US${property.price}</span>
               </div>
               <div className="rating">
