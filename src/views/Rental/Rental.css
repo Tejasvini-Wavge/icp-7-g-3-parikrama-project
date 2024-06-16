@@ -210,7 +210,7 @@
 
   
   
-  .container {
+  .container1 {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -611,5 +611,68 @@ h1 {
 @media (max-width: 768px) {
   .cards-container-feature {
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  }
+}
+/*-----------------location city ------------------------*/
+
+.container-location {
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.heading-location {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.cards-container-location {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.card-location {
+  width: 300px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+.card-img-location {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+}
+
+.location-image{
+  width: 110%;
+  height: 30vh;
+}
+
+.card-info-location {
+  padding: 15px;
+  text-align: center;
+}
+
+.location-city {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.city-location {
+  font-size: 1.2rem;
+}
+
+/* Responsive design */
+@media screen and (max-width: 768px) {
+  .card {
+    width: 100%;
   }
 }

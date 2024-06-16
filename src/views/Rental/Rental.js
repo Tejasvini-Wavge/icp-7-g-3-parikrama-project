@@ -21,10 +21,13 @@ import city4 from './images/c-1.webp';
 import icon1 from './images/1.png'
 import icon2 from './images/app.png'
 import icon3 from './images/apple-logo.png'
+
+import vimg1 from './images/vishnu (1).jpg';
+import vimg2 from './images/vishnu (2).jpg';
+import vimg3 from './images/vishnu (3).jpg';
+import vimg4 from './images/vishnu (4).jpg';
 function Rental() {
 
-  
- 
   return (
     <>
     <Navbar className="navbar" /> 
@@ -78,6 +81,43 @@ function Rental() {
         </div>
       </div>
     </div>
+
+    <hr></hr>
+
+    <div className="container-location">
+      <h1 className="heading-location">Explore Apartment By Location</h1>
+      <div className="cards-container-location">
+        <div className="card-location">
+          <img className="location-image" src={vimg1} alt="Apartment in Helsinki" />
+          <div className="card-info-location">
+            <p className="location-city">Location</p>
+            <p className="city-location">Helsinki, Finland</p>
+          </div>
+        </div>
+        <div className="card-location">
+          <img className="location-image" src={vimg2} alt="Apartment in Rotterdam" />
+          <div className="card-info-location">
+            <p className="location-city">Location</p>
+            <p className="city-location">Rotterdam, Netherlands</p>
+          </div>
+        </div>
+        <div className="card-location">
+          <img className="location-image" src={vimg3} alt="Apartment in Madrid" />
+          <div className="card-info-location">
+            <p className="location-city">Location</p>
+            <p className="city-location">Madrid, Spain</p>
+          </div>
+        </div>
+        <div className="card-location">
+          <img className="location-image" src={vimg4} alt="Apartment in Verona" />
+          <div className="card-info-location">
+            <p className="location-city">Location</p>
+            <p className="city-location">Verona, Italy</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
 
     <hr></hr>
 
