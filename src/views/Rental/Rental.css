@@ -1,7 +1,7 @@
 
 
   .background-rental {
-    background-image: url('./images/2.png');
+    background-image: url('./images/Untitled\ design.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -278,10 +278,11 @@
   }
   
   .app-icon {
-    width: 80px;
-    height: 80px;
+    border-radius: 10px;
+    width: 100px;
+    height: 100px;
     margin-bottom: 10px;
-  }
+    }
   
   .app-title {
     font-size: 32px;
@@ -349,10 +350,12 @@
     border-radius: 5px;
     padding: 15px 30px;
     font-size: 16px;
-    color: #333;
+    color: #ffffff;
     margin: 0 10px;
     text-decoration: none;
     cursor: pointer;
+    background-color: #000000;
+
   }
   
   .app-button-icon {

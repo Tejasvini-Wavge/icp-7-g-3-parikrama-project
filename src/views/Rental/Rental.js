@@ -17,6 +17,10 @@ import city1 from './images/c-4.webp';
 import city2 from './images/c-6.webp';
 import city3 from './images/c-7.webp';
 import city4 from './images/c-8.webp';
+
+import icon1 from './images/1.png'
+import icon2 from './images/app.png'
+import icon3 from './images/apple-logo.png'
 function Rental() {
 
   
@@ -223,7 +227,7 @@ function Rental() {
 
     <div className="app-container">
       <div className="app-header">
-        <img src="https://i.imgur.com/W3aYk2O.png" alt="App Icon" className="app-icon" />
+        <img src={icon1} alt="App Icon" className="app-icon" />
         <h1 className="app-title">Download App Now!</h1>
         <p className="app-subtitle">Use Code WELCOME and get FLAT 20% OFF* on your first domestic flight booking</p>
       </div>
@@ -235,12 +239,12 @@ function Rental() {
           <button className="app-button-red">Get App Link</button>
           <div className="app-button-group">
             <a href="#" className="app-button-google">
-              <img src="https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png" alt="Google Play" className="app-button-icon" />
+              <img src={icon2} alt="Google Play" className="app-button-icon" />
               <span className="app-button-text">GET IT ON</span>
               <span className="app-button-text-large">Google Play</span>
             </a>
             <a href="#" className="app-button-apple">
-              <img src="https://developer.apple.com/app-store/marketing/guidelines/images/badge-en-us.svg" alt="App Store" className="app-button-icon" />
+              <img src={icon3} alt="App Store" className="app-button-icon" />
               <span className="app-button-text">DOWNLOAD ON THE</span>
               <span className="app-button-text-large">App Store</span>
             </a>
@@ -250,7 +254,7 @@ function Rental() {
     </div>
     
     <hr></hr>
-    
+
     <div className="container-contact">
       <div className="content">
         <h1 className="title">Subscribe & Get</h1>
