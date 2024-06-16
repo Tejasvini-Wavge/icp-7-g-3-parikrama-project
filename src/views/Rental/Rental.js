@@ -15,8 +15,8 @@ import malaysiaAirlinesLogo from './images/flt-1.webp';
 
 import city1 from './images/c-4.webp';
 import city2 from './images/c-6.webp';
-import city3 from './images/c-7.webp';
-import city4 from './images/c-8.webp';
+import city3 from './images/c-2.webp';
+import city4 from './images/c-1.webp';
 
 import icon1 from './images/1.png'
 import icon2 from './images/app.png'
@@ -191,7 +191,7 @@ function Rental() {
       <div className="card-city">
         <img src={city2} alt="Destination" className="card-img-top" />
         <div className="card-body">
-          <h5 className="card-title">Destination</h5>
+          <h5 className="card-title">PARIS</h5>
           <p className="card-text">Make Your Next Journey Delhi To Paris in Comfirtable And Best Price</p>
           <a href="#" className="btn ">Read More</a>
         </div>
@@ -199,7 +199,7 @@ function Rental() {
       <div className="card-city">
         <img src={city3} alt="Journey" className="card-img-top" />
         <div className="card-body">
-          <h5 className="card-title">Journey</h5>
+          <h5 className="card-title">NEW-YORK</h5>
           <p className="card-text">Make Your Next Journey Delhi To Paris in Comfirtable And Best Price</p>
           <a href="#" className="btn ">Read More</a>
         </div>
@@ -207,7 +207,7 @@ function Rental() {
       <div className="card-city">
         <img src={city1} alt="Business" className="card-img-top" />
         <div className="card-body">
-          <h5 className="card-title">Business</h5>
+          <h5 className="card-title">DUBAI</h5>
           <p className="card-text">Make Your Next Journey Delhi To Paris in Comfirtable And Best Price</p>
           <a href="#" className="btn ">Read More</a>
         </div>
@@ -215,7 +215,7 @@ function Rental() {
       <div className="card-city">
         <img src={city4} alt="Business" className="card-img-top" />
         <div className="card-body">
-          <h5 className="card-title">Business</h5>
+          <h5 className="card-title">San Jose</h5>
           <p className="card-text">Make Your Next Journey Delhi To Paris in Comfirtable And Best Price</p>
           <a href="#" className="btn ">Read More</a>
         </div>
