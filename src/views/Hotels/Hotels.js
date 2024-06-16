@@ -9,6 +9,12 @@ import image2 from './img/hotel-calmo.jpg';
 import image3 from './img/mercure singapore.jpg';
 
 
+import citilinkLogo from './img/flt-3.webp';
+import goibiboLogo from './img/goibibo.webp';
+import airIndiaLogo from './img/flt-2.webp';
+import malaysiaAirlinesLogo from './img/flt-1.webp';
+
+
 
 function hotels() {
   const properties = [
@@ -69,6 +75,53 @@ function hotels() {
 
     <div  className='background-img'>
       
+    </div>
+
+    <div className="container">
+      <div className="card">
+        <div className="card-image">
+          <img src={citilinkLogo} alt="Citilink Logo" />
+        </div>
+        <div className="card-content">
+          <h3>Flat</h3>
+          <h2>$899 off</h2>
+          <p>On Domestic Flights</p>
+          <button className="button">LOG125F</button>
+        </div>
+      </div>
+      <div className="card">
+        <div className="card-image">
+          <img src={goibiboLogo} alt="Goibibo Logo" />
+        </div>
+        <div className="card-content">
+          <h3>Flat</h3>
+          <h2>$899 off</h2>
+          <p>On Domestic Flights</p>
+          <button className="button">INT285</button>
+        </div>
+      </div>
+      <div className="card">
+        <div className="card-image">
+          <img src={airIndiaLogo} alt="Air India Logo" />
+        </div>
+        <div className="card-content">
+          <h3>Flat</h3>
+          <h2>$899 off</h2>
+          <p>On Domestic Flights</p>
+          <button className="button">LOG125F</button>
+        </div>
+      </div>
+      <div className="card">
+        <div className="card-image">
+          <img src={malaysiaAirlinesLogo} alt="Malaysia Airlines Logo" />
+        </div>
+        <div className="card-content">
+          <h3>Flat</h3>
+          <h2>$899 off</h2>
+          <p>On Domestic Flights</p>
+          <button className="button">LOG125F</button>
+        </div>
+      </div>
     </div>
 
    
