@@ -2,14 +2,14 @@
     position: relative;
     width: 420px;
     height: 450px;
-    background: rgb(233, 116, 116);
+    background:  #ffcce0;
     border-radius: 10px;
     color: white;
     display: flex;
     align-items: center;
     overflow: hidden;
     transition: height .2s ease;
-    margin: 20px;
+   
     margin-left: 450px;
 }
 .wrapper.active{
@@ -117,3 +117,14 @@ form .register-link {
 .register-link p Link:hover {
     text-decoration:  underline;
 }
+
+.back-imag {
+    text-align: center;
+    background-color: #cc0052 ;
+    background-size: cover;
+    padding: 30px 20px;
+    color: white;
+    text-align: center;
+    width: 98%;
+    height: 500px;
+  }
