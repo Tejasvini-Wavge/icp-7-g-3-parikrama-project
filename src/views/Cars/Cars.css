@@ -10,6 +10,8 @@
   padding: 50px 20px;
   color: white;
   text-align: center;
+  width: 100%;
+  height: 30vh;
 }
 
 .header-content {
