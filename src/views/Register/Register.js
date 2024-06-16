@@ -1,8 +1,9 @@
 import { Link } from "react-router-dom"
 import "./Register.css"
 import { useState } from "react"
+import Navbar from "../../components/Navbar/Navbar";
 
- const Register = () => {
+const Register = () => {
 
     const [action, setAction] = useState('');
 
@@ -13,59 +14,63 @@ import { useState } from "react"
         setAction('')
     }
     return (
-        <div className={`wrapper ${action}`}>
-            <div className="form-box login">
-                <form action="">
-                    <h1>Login</h1>
-                    <div className="input-box">
-                        <input type="text" placeholder="Username" required />
-                    </div>
-                    <div className="input-box">
-                        <input type="password" placeholder="Password" required />
-                    </div>
-                    <div className="remember-forgot">
-                        <label>
-                            <input type="checkbox"/>Remember me 
-                        </label>
-                        <Link href="#">forgot password</Link>
-                        
-                    </div>
+        <div>
+            <Navbar/>
+            <div className={`wrapper ${action}`}>
+                <div className="form-box login">
+                    <form action="">
+                        <h1>Login</h1>
+                        <div className="input-box">
+                            <input type="text" placeholder="Username" required />
+                        </div>
+                        <div className="input-box">
+                            <input type="password" placeholder="Password" required />
+                        </div>
+                        <div className="remember-forgot">
+                            <label>
+                                <input type="checkbox" />Remember me
+                            </label>
+                            <Link href="#">forgot password</Link>
 
-                    <button type="submit" className="btn">Login</button>
+                        </div>
 
-                    <div className="register-link">
-                        <p>Don't have an account? <Link href="#" onClick={registerLink}>Register</Link></p>
-                    </div>
-                </form>
-            </div>
+                        <button type="submit" className="btn">Login</button>
 
-            <div className="form-box register">
-                <form action="">
-                    <h1>Register</h1>
-                    <div className="input-box">
-                        <input type="text" placeholder="Username" required />
-                    </div>
-                    <div className="input-box">
-                        <input type="email" placeholder="Email" required />
-                    </div>
-                    <div className="input-box">
-                        <input type="password" placeholder="Password" required />
-                    </div>
-                    <div className="remember-forgot">
-                        <label>
-                            <input type="checkbox"/>I agree to the term and conditions 
-                        </label>
-                        <Link href="#">forgot password</Link>
-                        
-                    </div>
+                        <div className="register-link">
+                            <p>Don't have an account? <Link href="#" onClick={registerLink}>Register</Link></p>
+                        </div>
+                    </form>
+                </div>
 
-                    <button type="submit" className="btn">Register</button>
+                <div className="form-box register">
+                    <form action="">
+                        <h1>Register</h1>
+                        <div className="input-box">
+                            <input type="text" placeholder="Username" required />
+                        </div>
+                        <div className="input-box">
+                            <input type="email" placeholder="Email" required />
+                        </div>
+                        <div className="input-box">
+                            <input type="password" placeholder="Password" required />
+                        </div>
+                        <div className="remember-forgot">
+                            <label>
+                                <input type="checkbox" />I agree to the term and conditions
+                            </label>
+                            <Link href="#">forgot password</Link>
 
-                    <div className="register-link">
-                        <p>Already have an account? <Link href="#" onClick={loginLink}>Login</Link></p>
-                    </div>
-                </form>
+                        </div>
+
+                        <button type="submit" className="btn">Register</button>
+
+                        <div className="register-link">
+                            <p>Already have an account? <Link href="#" onClick={loginLink}>Login</Link></p>
+                        </div>
+                    </form>
+                </div>
             </div>
         </div>
-    )}
+    )
+}
 export default Register
