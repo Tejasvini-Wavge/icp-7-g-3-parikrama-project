@@ -18,14 +18,14 @@ function hotels() {
       title: 'Dorsett Singapore',
       features: 
       {
-        beds: 3,
-        baths: 2,
+        beds: 4,
+        baths: 3,
         sqft: 2100,
         store: 1,
       },
-      price: 492,
-      rating: 2.6,
-      reviews: 142,
+      price: 500,
+      rating: 2.8,
+      reviews: 150,
     },
     {
       type: 'Free Cancellation Till 10 Aug 23',
@@ -48,14 +48,14 @@ function hotels() {
       image: image3,
       title: 'Mercure Singapore Trywhitt',
       features: {
-         beds: 3,
+         beds: 2,
         baths: 2,
         sqft: 2100,
         store: 1,
       },
-      price: 492,
+      price: 450,
       rating: 4.6,
-      reviews: 142,
+      reviews: 145,
     },
   
 
@@ -74,7 +74,7 @@ function hotels() {
    
 
     <div className="app">
-      <h1>Explore  Hotels Properties</h1>
+      <h1>Explore Top Hotels Resorts</h1>
       <div className="properties">
         {properties.map((property, index) => (
           <div className="property" key={index}>
