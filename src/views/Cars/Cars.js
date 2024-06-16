@@ -1,115 +1,163 @@
 import React from 'react';
 import Navbar from '../../components/Navbar/Navbar';
 import Footer from '../../components/Footer/Footer';
-import './../../views/Cars/Cars.css'
+import './../../views/Cars/Cars.css';
 
-const Header = () => {
-  return (
-    <header className="header">
-      <h1>Start Your Trip with GeoTrip</h1>
-      <p>Take a little break from the work stress of everyday. Discover plan trip and explore beautiful destinations!</p>
-    </header>
-  );
-}
+import carImage1 from './../../img/hotel-.webp';
+import carImage2 from './../../img/hotel-.webp';
+import carImage3 from './../../img/hotel-.webp';
+import carImage4 from './../../img/hotel-.webp';
+import carImage5 from './../../img/hotel-.webp';
+import carImage6 from './../../img/hotel-.webp';
 
-const LocationSearch = () => {
-  return (
-    <div className="location-search">
-      <input type="text" placeholder="Select Pickup Location" />
-      <input type='date' placeholder='choose date' />
-      <input type="text" placeholder="Select Drop Location" />
-      <button>Search</button>
-    </div>
-  );
-}
+const carData = [
+  { id: 1, model: "Carmy Accord", image: carImage1, discount: "600Kms included. After that $1/km", type: "SEDAN | AC | 5 Seats" },
+  { id: 2, model: "Audi, BMW", image: carImage2, discount: "600Kms included. After that $1/km", type: "Hatchback | AC | 5 Seats" },
+  { id: 3, model: "Ertiga, Xylo", image: carImage3, discount: "600Kms included. After that $1/km", type: "LUX | AC | 5 Seats" },
+  { id: 4, model: "Suv, Innova Crysta", image: carImage4, discount: "600Kms included. After that $1/km", type: "SUV | AC | 5 Seats" },
+  { id: 5, model: "Toyota Aygo", image: carImage5, discount: "600Kms included. After that $1/km", type: "SEDAN | AC | 5 Seats" },
+  { id: 6, model: "Ford Focus", image: carImage6, discount: "600Kms included. After that $1/km", type: "LUX | AC | 5 Seats" },
+];
 
-const DestinationCard = ({ city, priceRange, imageUrl }) => {
-  return (
-    <div className="destination-card">
-      <img src={imageUrl} alt={city} />
-      <h3>{city}</h3>
-      <p>{priceRange}</p>
-    </div>
-  );
-}
-
-const VehicleCard = ({ name, type, seats, price, imageUrl }) => {
-  return (
-    <div className="vehicle-card">
-      <img src={imageUrl} alt={name} />
-      <h4>{name}</h4>
-      <p>{type} - {seats} Seats</p>
-      <p>{price}</p>
-    </div>
-  );
-}
-
-const VehicleList = () => {
-  const vehicles = [
-    { name: 'Camry Accord', type: 'Sedan', seats: 5, price: '$59', imageUrl: 'https://via.placeholder.com/150' },
-    { name: 'Eriga, Xylo', type: 'LUV', seats: 5, price: '$59', imageUrl: 'https://via.placeholder.com/150' },
-    { name: 'SUV, Innova Crysta', type: 'SUV', seats: 7, price: '$59', imageUrl: 'https://via.placeholder.com/150' },
-    { name: 'Toyota Aygo', type: 'Hatchback', seats: 4, price: '$59', imageUrl: 'https://via.placeholder.com/150' },
-    { name: 'Ford Focus', type: 'LUV', seats: 5, price: '$59', imageUrl: 'https://via.placeholder.com/150' },
-  ];
-
-  return (
-    <div className="vehicle-list">
-      {vehicles.map(vehicle => (
-        <VehicleCard key={vehicle.name} {...vehicle} />
-      ))}
-    </div>
-  );
-}
-
-const TrendingDestinationCard = ({ city, country, imageUrl }) => {
-  return (
-    <div className="trending-destination-card">
-      <img src={imageUrl} alt={`${city}, ${country}`} />
-      <h4>{city}</h4>
-      <p>{country}</p>
-    </div>
-  );
-}
-
-const TrendingDestinationList = () => {
-  const destinations = [
-    { city: 'Dubai', country: 'UAE', imageUrl: 'https://via.placeholder.com/150' },
-    { city: 'New York', country: 'USA', imageUrl: 'https://via.placeholder.com/150' },
-    { city: 'Paris', country: 'France', imageUrl: 'https://via.placeholder.com/150' },
-    { city: 'Tokyo', country: 'Japan', imageUrl: 'https://via.placeholder.com/150' },
-    { city: 'Kuala Lumpur', country: 'Malaysia', imageUrl: 'https://via.placeholder.com/150' },
-    { city: 'Bangkok', country: 'Thailand', imageUrl: 'https://via.placeholder.com/150' },
-  ];
-
-  return (
-    <div className="trending-destination-list">
-      {destinations.map(destination => (
-        <TrendingDestinationCard key={destination.city} {...destination} />
-      ))}
-    </div>
-  );
-}
+const destinationData = [
+  {
+    image: '',
+    city: 'Chicago',
+    details: '10 Destinations | 5 Cars'
+  },
+  {
+    image: './../../img/san-diego.jpg',
+    city: 'San Diego',
+    details: '10 Destinations | 5 Cars'
+  },
+  {
+    image: './../../img/san-jose.jpg',
+    city: 'San Jose',
+    details: '10 Destinations | 5 Cars'
+  },
+  {
+    image: './../../img/new-york.jpg',
+    city: 'New York',
+    details: '10 Destinations | 5 Cars'
+  },
+  {
+    image: './../../img/san-francisco.jpg',
+    city: 'San Francisco',
+    details: '10 Destinations | 5 Cars'
+  },
+  {
+    image: './../../img/new-orleans.jpg',
+    city: 'New Orleans',
+    details: '10 Destinations | 5 Cars'
+  },
+  {
+    image: './../../img/los-angeles.jpg',
+    city: 'Los Angeles',
+    details: '10 Destinations | 5 Cars'
+  },
+  {
+    image: './../../img/long-beach.jpg',
+    city: 'Long Beach',
+    details: '10 Destinations | 5 Cars'
+  }
+];
 
 const Cars = () => {
   return (
-    <div className="App">
-      <Header />
-      <LocationSearch />
-      <div className="destination-list">
-        <DestinationCard city="Los Angeles" priceRange="$849 - $999" imageUrl="https://via.placeholder.com/150" />
-        <DestinationCard city="United Kingdom" priceRange="$569 - $799" imageUrl="https://via.placeholder.com/150" />
-        <DestinationCard city="United States" priceRange="$300 - $999" imageUrl="https://via.placeholder.com/150" />
-        <DestinationCard city="Paris, France" priceRange="$800 - $1199" imageUrl="https://via.placeholder.com/150" />
+    <>
+      <Navbar className="navbar" /> 
+      <div className="cars-container">
+        <header className="header">
+          <div className="header-content">
+            <h1>Starts Your Trip with GeoTrip</h1>
+            <p>Take a little break from the work stress of everyday. Discover plan trip and explore beautiful destinations.</p>
+            <div className="search-box">
+              <input type="text" placeholder="Select Pickup Location" />
+              <input type='date' placeholder='choose date' />
+              <input type="text" placeholder="Select drop Location" />
+              <button>Search</button>
+            </div>
+          </div>
+        </header>
+        <section className="deals">
+          <div className="deal-card">
+            <div className="discount">20% Off</div>
+            <img src="https://wallpaperaccess.com/full/4248674.jpg" alt="Los Angeles" />
+            <div className="deal-info">
+              <h2>Los Angeles</h2>
+              <p>Round-trip | 3D/4N | 3 Person</p>
+              <p>From <span>$849 - $999</span></p>
+            </div>
+          </div>
+          <div className="deal-card">
+            <div className="discount">15% Off</div>
+            <img src="https://tse2.mm.bing.net/th?id=OIP.30sP-ds4mTbrzBjZhvkIDwHaEK&pid=Api&P=0&h=220" alt="United Kingdom" />
+            <div className="deal-info">
+              <h2>United Kingdom</h2>
+              <p>Round-trip | 3D/4N | 2 Person</p>
+              <p>From <span>$399 - $599</span></p>
+            </div>
+          </div>
+          <div className="deal-card">
+            <div className="discount">30% Off</div>
+            <img src="https://tse2.explicit.bing.net/th?id=OIP.MMMUIn6dKIaFhdmtskNK-gHaEK&pid=Api&P=0&h=220" alt="France" />
+            <div className="deal-info">
+              <h2>France</h2>
+              <p>Round-trip | 3D/4N | 3 Person</p>
+              <p>From <span>$569 - $799</span></p>
+            </div>
+          </div>
+        </section>
+        <section className="vehicles">
+          <h2>Our Awesome Vehicles</h2>
+          <p>Cicero famously orated against his political opponent Lucius Sergius Catilina.</p>
+          <div className="vehicles-row">
+            {carData.map(car => (
+              <div className="vehicle-card" key={car.id}>
+                <div className="vehicle-discount">{car.discount}</div>
+                <img src={car.image} alt={car.model} />
+                <h3>{car.model}</h3>
+                <p>{car.type}</p>
+                <div className="vehicle-info">
+                  <div className="cancellation">Free Cancellation Till 10 Aug '23</div>
+                  <div className="tags">
+                    <span>Manual</span>
+                    <span>1 Large bag</span>
+                    <span>1 Small bag</span>
+                    <span>Diesel</span>
+                  </div>
+                  <div className="price">
+                    <span>15% Off</span>
+                    <span className="price-value">US$59 <s>US$79</s></span>
+                  </div>
+                  <div className="rating">
+                    <span>Exceptional</span>
+                    <span>3,014 reviews</span>
+                    <span className="rating-value">4.8</span>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+          <button className="explore-more">Explore More</button>
+        </section>
+        <section className="trending-destinations">
+          <h2>Trending Destinations For Stay</h2>
+          <p>Cicero famously orated against his political opponent Lucius Sergius Catilina.</p>
+          <div className="destinations-container">
+            {destinationData.map((destination, index) => (
+              <div key={index} className="destination-card">
+                <img src={destination.image} alt={destination.city} />
+                <h3>{destination.city}</h3>
+                <p>{destination.details}</p>
+              </div>
+            ))}
+          </div>
+        </section>
       </div>
-      <VehicleList />
-      <TrendingDestinationList />
-    </div>
+      <Footer className="footer"/>
+    </>
   );
 }
-
-
-
-
 
 export default Cars;

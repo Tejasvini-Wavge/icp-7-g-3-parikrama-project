@@ -1,5 +1,5 @@
 .background-img{
-    background-image: url('./R.jpg');
+    background-image: url('./img/R.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -23,10 +23,12 @@
 
 
 .card{
+
     display:inline-block;
     height:400px;
     width:300px;
     border:5px solid black;
+    
 
 }
 .description{
@@ -37,4 +39,121 @@
 
 .container{
     display:flex;
+    
 }
+
+.app {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  h1 {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .properties {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .property {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 400px;
+  }
+  
+  .property img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  .property-info {
+    padding: 15px;
+  }
+  
+  .type {
+    background-color: #66ab68;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
+  
+  .features {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+  }
+  
+  .features div {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .price {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin-bottom: 15px;
+  }
+  
+  .discount {
+    background-color: #f44336;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+  }
+  
+  .rating {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+  }
+  
+  .stars {
+    color: #ffc107;
+    font-size: 20px;
+  }
+  
+  .review-count {
+    font-size: 14px;
+    color: #666;
+  }
+  
+  .more {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+  }
+  .border{
+    border: 0.5px solid #a7a7a7;
+    padding: 2px;
+    font-size: 15px;
+    border-radius: 5px;
+  }
+
+  .background-rental {
+    background-image: url('./img/R.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh; 
+  }
+  
+  /* -------------------------------------------------------------------------*/
+
+  
+
+
