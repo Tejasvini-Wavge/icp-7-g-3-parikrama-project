@@ -104,7 +104,52 @@ function Rental() {
     </div>
 
     
-    
+    <div className="container">
+      <div className="card">
+        <div className="card-image">
+          <img src="citilink-logo.png" alt="Citilink Logo" />
+        </div>
+        <div className="card-content">
+          <h3>Flat</h3>
+          <h2>$899 off</h2>
+          <p>On Domestic Flights</p>
+          <button className="button">LOG125F</button>
+        </div>
+      </div>
+      <div className="card">
+        <div className="card-image">
+          <img src="goibibo-logo.png" alt="Goibibo Logo" />
+        </div>
+        <div className="card-content">
+          <h3>Flat</h3>
+          <h2>$899 off</h2>
+          <p>On Domestic Flights</p>
+          <button className="button">INT285</button>
+        </div>
+      </div>
+      <div className="card">
+        <div className="card-image">
+          <img src="" alt="Air India Logo" />
+        </div>
+        <div className="card-content">
+          <h3>Flat</h3>
+          <h2>$899 off</h2>
+          <p>On Domestic Flights</p>
+          <button className="button">LOG125F</button>
+        </div>
+      </div>
+      <div className="card">
+        <div className="card-image">
+          <img src="malaysia-airlines-logo.png" alt="Malaysia Airlines Logo" />
+        </div>
+        <div className="card-content">
+          <h3>Flat</h3>
+          <h2>$899 off</h2>
+          <p>On Domestic Flights</p>
+          <button className="button">LOG125F</button>
+        </div>
+      </div>
+    </div>
 
   
     
