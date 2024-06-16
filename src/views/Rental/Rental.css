@@ -1,107 +1,4 @@
-.app {
-    font-family: Arial, sans-serif;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 20px;
 
-  }
-  
-  
-  h1 {
-    text-align: center;
-    margin-bottom: 30px;
-  }
-  
-  .properties {
-    display: flex;
-    gap: 20px;
-  }
-  
-  .property {
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    overflow: hidden;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    width: 400px;
-  }
-
-  
-  
-  .property img {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-  }
-  
-  .property-info {
-    padding: 15px;
-  }
-  
-  .type {
-    background-color: #66ab68;
-    color: white;
-    padding: 5px 10px;
-    border-radius: 5px;
-    margin-bottom: 10px;
-  }
-  
-  .features {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 15px;
-  }
-  
-  .features div {
-    display: flex;
-    gap: 10px;
-  }
-  
-  .price {
-    display: flex;
-    gap: 10px;
-    align-items: center;
-    margin-bottom: 15px;
-  }
-  
-  .discount {
-    background-color: #f44336;
-    color: white;
-    padding: 5px 10px;
-    border-radius: 5px;
-  }
-  
-  .rating {
-    display: flex;
-    gap: 10px;
-    align-items: center;
-  }
-  
-  .stars {
-    color: #ffc107;
-    font-size: 20px;
-  }
-  
-  .review-count {
-    font-size: 14px;
-    color: #666;
-  }
-  
-  .more {
-    background-color: #333;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    margin-top: 20px;
-  }
-  .border{
-    border: 0.3px solid #a7a7a7;
-    padding: 3px;
-    font-size: 15px;
-    border-radius: 5px;
-  }
 
   .background-rental {
     background-image: url('./images/slider-one.png');
@@ -123,25 +20,29 @@
   
   .card {
     width: 250px;
+    height: 275px;
     margin: 10px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(190, 167, 167, 0.1);
     overflow: hidden;
     background-color: #c4c4c4;
     border: none;
+    padding: 5px;
   }
   
   .card-image {
     width: 100%;
-    height: 200px;
+    height: 100px;
     background-size: cover;
     background-position: center;
+    margin-bottom: -12px;
   }
   
   .card-image img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+    width: 70%;
+    height: 70%;
+    margin-top: 1rem;
+    margin-left: 1rem;
   }
   
   .card-content {
@@ -168,18 +69,140 @@
   }
   
   .button {
-    background-color: #4CAF50;
-    color: white;
+    background-color: #1bd811a4;
     padding: 10px 20px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
     font-size: 16px;
+    border: dashed 2px #333;
   }
   
   @media screen and (max-width: 768px) {
     .card {
       width: 100%;
       margin-bottom: 20px;
+    }
+  }
+
+  /* ---------------------------------HOUSE,VILLA,APPARTMENTS----------------------------------------*/
+
+  .app {
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: #ffffff;
+  }
+  
+  .container1 {
+    max-width: 900px;
+    width: 100%;
+  }
+  
+  h1 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .properties {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  
+  .property {
+    width: 400px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+  }
+  
+  .image {
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 5px;
+  }
+  
+  .image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .info {
+    margin-top: 10px;
+  }
+  
+  h2 {
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+  }
+  
+  h3 {
+    font-size: 1rem;
+    margin-bottom: 10px;
+  }
+  
+  .details {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    margin-right: 1px;
+  }
+  
+  .details div {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    margin-bottom: 5px;
+  }
+  
+  .price {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .discount1 {
+    background-color: #f0f0f0;
+    padding: 5px 10px;
+    border-radius: 3px;
+    margin-right: 10px;
+  }
+  
+  .amount {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  .rating {
+    display: flex;
+    align-items: center;
+  }
+ 
+  .more {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+    width: 30%;
+  
+  }
+  
+  @media (max-width: 768px) {
+    .properties {
+      flex-direction: column;
+    }
+  
+    .property {
+      width: 100%;
     }
   }
