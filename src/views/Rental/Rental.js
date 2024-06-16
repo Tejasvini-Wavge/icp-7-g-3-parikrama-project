@@ -31,9 +31,75 @@ function Rental() {
   return (
     <>
     <Navbar className="navbar" /> 
-    <div  className='background-rental'></div>
 
-    
+    <div className="container-banner">
+      <div className="card-container-banner">
+        <div className="card-banner">
+          <div className="card-header-banner">Where</div>
+          <div className="card-content-banner">
+            <input type="text" placeholder="Going To" />
+          </div>
+        </div>
+
+        <div className="card-banner">
+          <div className="card-header-banner">Choose Date</div>
+          <div className="card-content-banner">
+            <input type="text" placeholder="Check-In & Check-Out" />
+          </div>
+        </div>
+
+        <div className="card-banner">
+          <div className="card-header-banner">Members</div>
+          <div className="card-content-banner">
+            <p>2 Adults</p>
+          </div>
+        </div>
+
+        <div className="card-button-banner">
+          <button className="search-button-banner">
+            <span className="search-text-banner">Search</span>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <hr></hr>
+
+    <div className="container-location">
+      <h1 className="heading-location">Explore Apartment By Location</h1>
+      <div className="cards-container-location">
+        <div className="card-location">
+          <img className="location-image" src={vimg1} alt="Apartment in Helsinki" />
+          <div className="card-info-location">
+            <p className="location-city">Location</p>
+            <p className="city-location">Helsinki, Finland</p>
+          </div>
+        </div>
+        <div className="card-location">
+          <img className="location-image" src={vimg2} alt="Apartment in Rotterdam" />
+          <div className="card-info-location">
+            <p className="location-city">Location</p>
+            <p className="city-location">Rotterdam, Netherlands</p>
+          </div>
+        </div>
+        <div className="card-location">
+          <img className="location-image" src={vimg3} alt="Apartment in Madrid" />
+          <div className="card-info-location">
+            <p className="location-city">Location</p>
+            <p className="city-location">Madrid, Spain</p>
+          </div>
+        </div>
+        <div className="card-location">
+          <img className="location-image" src={vimg4} alt="Apartment in Verona" />
+          <div className="card-info-location">
+            <p className="location-city">Location</p>
+            <p className="city-location">Verona, Italy</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <hr></hr>
    
     <div className="container">
       <div className="card">
@@ -82,41 +148,7 @@ function Rental() {
       </div>
     </div>
 
-    <hr></hr>
-
-    <div className="container-location">
-      <h1 className="heading-location">Explore Apartment By Location</h1>
-      <div className="cards-container-location">
-        <div className="card-location">
-          <img className="location-image" src={vimg1} alt="Apartment in Helsinki" />
-          <div className="card-info-location">
-            <p className="location-city">Location</p>
-            <p className="city-location">Helsinki, Finland</p>
-          </div>
-        </div>
-        <div className="card-location">
-          <img className="location-image" src={vimg2} alt="Apartment in Rotterdam" />
-          <div className="card-info-location">
-            <p className="location-city">Location</p>
-            <p className="city-location">Rotterdam, Netherlands</p>
-          </div>
-        </div>
-        <div className="card-location">
-          <img className="location-image" src={vimg3} alt="Apartment in Madrid" />
-          <div className="card-info-location">
-            <p className="location-city">Location</p>
-            <p className="city-location">Madrid, Spain</p>
-          </div>
-        </div>
-        <div className="card-location">
-          <img className="location-image" src={vimg4} alt="Apartment in Verona" />
-          <div className="card-info-location">
-            <p className="location-city">Location</p>
-            <p className="city-location">Verona, Italy</p>
-          </div>
-        </div>
-      </div>
-    </div>
+    
 
 
     <hr></hr>
@@ -408,20 +440,22 @@ function Rental() {
         </div>
       </div>
     </div>
-    
-    <hr></hr>
 
+    <hr></hr>
     <div className="container-contact">
       <div className="content">
         <h1 className="title">Subscribe & Get</h1>
-        <h2 className="subtitle">Special Discount with GeoTrip.com</h2>
+        <h2 className="subtitle">Special Discount with Parikrama.com</h2>
         <div className="form">
           <input type="text" placeholder="Enter Your Mail!" />
           <button className="submit">Submit</button>
         </div>
       </div>
     </div>
+    
+    <hr></hr>
 
+   
     <div className="reviews-container">
       <h1>Loving Reviews By Our Customers</h1>
       <div className="reviews-grid">
@@ -482,6 +516,8 @@ function Rental() {
         </div>
       </div>
     </div>
+
+   
     <Footer className="footer"/>
 
     </>
