@@ -15,14 +15,22 @@ import malaysiaAirlinesLogo from './images/flt-1.webp';
 
 import city1 from './images/c-4.webp';
 import city2 from './images/c-6.webp';
-import city3 from './images/c-7.webp';
-import city4 from './images/c-8.webp';
+import city3 from './images/c-2.webp';
+import city4 from './images/c-1.webp';
+
+import icon1 from './images/1.png'
+import icon2 from './images/app.png'
+import icon3 from './images/apple-logo.png'
 function Rental() {
+
+  
  
   return (
     <>
     <Navbar className="navbar" /> 
     <div  className='background-rental'></div>
+
+    
    
     <div className="container">
       <div className="card">
@@ -183,7 +191,7 @@ function Rental() {
       <div className="card-city">
         <img src={city2} alt="Destination" className="card-img-top" />
         <div className="card-body">
-          <h5 className="card-title">Destination</h5>
+          <h5 className="card-title">PARIS</h5>
           <p className="card-text">Make Your Next Journey Delhi To Paris in Comfirtable And Best Price</p>
           <a href="#" className="btn ">Read More</a>
         </div>
@@ -191,7 +199,7 @@ function Rental() {
       <div className="card-city">
         <img src={city3} alt="Journey" className="card-img-top" />
         <div className="card-body">
-          <h5 className="card-title">Journey</h5>
+          <h5 className="card-title">NEW-YORK</h5>
           <p className="card-text">Make Your Next Journey Delhi To Paris in Comfirtable And Best Price</p>
           <a href="#" className="btn ">Read More</a>
         </div>
@@ -199,7 +207,7 @@ function Rental() {
       <div className="card-city">
         <img src={city1} alt="Business" className="card-img-top" />
         <div className="card-body">
-          <h5 className="card-title">Business</h5>
+          <h5 className="card-title">DUBAI</h5>
           <p className="card-text">Make Your Next Journey Delhi To Paris in Comfirtable And Best Price</p>
           <a href="#" className="btn ">Read More</a>
         </div>
@@ -207,7 +215,7 @@ function Rental() {
       <div className="card-city">
         <img src={city4} alt="Business" className="card-img-top" />
         <div className="card-body">
-          <h5 className="card-title">Business</h5>
+          <h5 className="card-title">San Jose</h5>
           <p className="card-text">Make Your Next Journey Delhi To Paris in Comfirtable And Best Price</p>
           <a href="#" className="btn ">Read More</a>
         </div>
@@ -215,7 +223,109 @@ function Rental() {
     </div>
 
     <hr></hr>
+
+
+    <div className="app-container">
+      <div className="app-header">
+        <img src={icon1} alt="App Icon" className="app-icon" />
+        <h1 className="app-title">Download App Now!</h1>
+        <p className="app-subtitle">Use Code WELCOME and get FLAT 20% OFF* on your first domestic flight booking</p>
+      </div>
+      <div className="app-body">
+        <div className="app-mobile-number">
+          <input type="text" placeholder="+91 - Enter Mobile Number" className="app-mobile-input" />
+        </div>
+        <div className="app-buttons">
+          <button className="app-button-red">Get App Link</button>
+          <div className="app-button-group">
+            <a href="#" className="app-button-google">
+              <img src={icon2} alt="Google Play" className="app-button-icon" />
+              <span className="app-button-text">GET IT ON</span>
+              <span className="app-button-text-large">Google Play</span>
+            </a>
+            <a href="#" className="app-button-apple">
+              <img src={icon3} alt="App Store" className="app-button-icon" />
+              <span className="app-button-text">DOWNLOAD ON THE</span>
+              <span className="app-button-text-large">App Store</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
     
+    <hr></hr>
+
+    <div className="container-contact">
+      <div className="content">
+        <h1 className="title">Subscribe & Get</h1>
+        <h2 className="subtitle">Special Discount with GeoTrip.com</h2>
+        <div className="form">
+          <input type="text" placeholder="Enter Your Mail!" />
+          <button className="submit">Submit</button>
+        </div>
+      </div>
+    </div>
+
+    <div className="reviews-container">
+      <h1>Loving Reviews By Our Customers</h1>
+      <div className="reviews-grid">
+        <div className="review-card">
+          <img src="https://randomuser.me/api/portraits/men/75.jpg" alt="Aman Diwakar" className="review-avatar" />
+          <div className="review-info">
+            <h2>Aman Diwakar</h2>
+            <p>United States</p>
+            <div className="review-rating">
+              <span className="star">★★★★★</span>
+            </div>
+            <p className="review-text">excellent </p>
+          </div>
+        </div>
+        <div className="review-card">
+          <img src="https://randomuser.me/api/portraits/men/76.jpg" alt="Kunal M. Thakur" className="review-avatar" />
+          <div className="review-info">
+            <h2>Kunal M. Thakur</h2>
+            <p>United States</p>
+            <div className="review-rating">
+              <span className="star">★★★★★</span>
+            </div>
+            <p className="review-text">excellent </p>
+          </div>
+        </div>
+        <div className="review-card">
+          <img src="https://randomuser.me/api/portraits/women/75.jpg" alt="Divya Talwar" className="review-avatar" />
+          <div className="review-info">
+            <h2>Divya Talwar</h2>
+            <p>United States</p>
+            <div className="review-rating">
+              <span className="star">★★★★★</span>
+            </div>
+            <p className="review-text">excellent </p>
+          </div>
+        </div>
+        <div className="review-card">
+          <img src="https://randomuser.me/api/portraits/men/77.jpg" alt="Karan Maheshwari" className="review-avatar" />
+          <div className="review-info">
+            <h2>Karan Maheshwari</h2>
+            <p>United States</p>
+            <div className="review-rating">
+              <span className="star">★★★★★</span>
+            </div>
+            <p className="review-text">excellent </p>
+          </div>
+        </div>
+        <div className="review-card">
+          <img src="https://randomuser.me/api/portraits/women/76.jpg" alt="Ritika Mathur" className="review-avatar" />
+          <div className="review-info">
+            <h2>Ritika Mathur</h2>
+            <p>United States</p>
+            <div className="review-rating">
+              <span className="star">★★★★★</span>
+            </div>
+            <p className="review-text">excellent </p>
+          </div>
+        </div>
+      </div>
+    </div>
     <Footer className="footer"/>
 
     </>
