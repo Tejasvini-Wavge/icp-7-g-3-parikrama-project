@@ -18,11 +18,15 @@ import city2 from './images/c-6.webp';
 import city3 from './images/c-7.webp';
 import city4 from './images/c-8.webp';
 function Rental() {
+
+  
  
   return (
     <>
     <Navbar className="navbar" /> 
     <div  className='background-rental'></div>
+
+    
    
     <div className="container">
       <div className="card">
@@ -215,7 +219,48 @@ function Rental() {
     </div>
 
     <hr></hr>
+
+
+    <div className="app-container">
+      <div className="app-header">
+        <img src="https://i.imgur.com/W3aYk2O.png" alt="App Icon" className="app-icon" />
+        <h1 className="app-title">Download App Now!</h1>
+        <p className="app-subtitle">Use Code WELCOME and get FLAT 20% OFF* on your first domestic flight booking</p>
+      </div>
+      <div className="app-body">
+        <div className="app-mobile-number">
+          <input type="text" placeholder="+91 - Enter Mobile Number" className="app-mobile-input" />
+        </div>
+        <div className="app-buttons">
+          <button className="app-button-red">Get App Link</button>
+          <div className="app-button-group">
+            <a href="#" className="app-button-google">
+              <img src="https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png" alt="Google Play" className="app-button-icon" />
+              <span className="app-button-text">GET IT ON</span>
+              <span className="app-button-text-large">Google Play</span>
+            </a>
+            <a href="#" className="app-button-apple">
+              <img src="https://developer.apple.com/app-store/marketing/guidelines/images/badge-en-us.svg" alt="App Store" className="app-button-icon" />
+              <span className="app-button-text">DOWNLOAD ON THE</span>
+              <span className="app-button-text-large">App Store</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
     
+    <hr></hr>
+    
+    <div className="container-contact">
+      <div className="content">
+        <h1 className="title">Subscribe & Get</h1>
+        <h2 className="subtitle">Special Discount with GeoTrip.com</h2>
+        <div className="form">
+          <input type="text" placeholder="Enter Your Mail!" />
+          <button className="submit">Submit</button>
+        </div>
+      </div>
+    </div>
     <Footer className="footer"/>
 
     </>
