@@ -30,8 +30,7 @@ const Register = () => {
                                 <input type="password" placeholder="Password" required />
                             </div>
                             <div className="remember-forgot">
-                                <label>
-                                    <input type="checkbox" />Remember me
+                                <label>Remember me
                                 </label>
                                 <Link href="#" className="Forgot">forgot password</Link>
 
@@ -59,8 +58,7 @@ const Register = () => {
                                 <input type="password" placeholder="Password" required />
                             </div>
                             <div className="remember-forgot">
-                                <label>
-                                    <input type="checkbox" />I agree to the term and conditions
+                                <label>I agree to the term and conditions
                                 </label>
                                 <Link href="#" className="Forgot">forgot password</Link>
 
