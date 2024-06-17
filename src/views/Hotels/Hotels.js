@@ -170,7 +170,7 @@ function hotels() {
     </div>
 
 
-
+<h1>Explore Top  Destination </h1>
 
     <div className="container">
       <div className="card-city">
