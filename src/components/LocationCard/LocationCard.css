@@ -6,3 +6,11 @@
     position: relative;
 }
 
+.location-image{
+    width: 330px;
+    cursor: pointer;
+}
+
+.location{
+    padding: 7px 20px;
+}
