@@ -32,7 +32,13 @@ const LocationData= [
         img: "https://shreethemes.net/geotrip-live/geotrip/assets/img/destination/tr-2.jpg",
         location: "New York 🔛 Los Angeles",
         tripdays: "Round trip | 3 days",
-        rs: "US$494"
+        from: "US$434"
+    },
+    {
+        img: "https://shreethemes.net/geotrip-live/geotrip/assets/img/destination/tr-3.jpg",
+        location: "New York 🔛 Los Angeles",
+        tripdays: "Round trip | 3 days",
+        from: "US$489"
     },
 ]
 export {FlightData, LocationData}
