@@ -3,6 +3,7 @@ import "./Register.css"
 import { useState } from "react"
 import Navbar from "../../components/Navbar/Navbar";
 import Footer from "./../../components/Footer/Footer"
+import Image from "./img/images (2).jpg"
 
 const Register = () => {
 
@@ -17,7 +18,9 @@ const Register = () => {
     return (
         <div>
             <Navbar />
-            <header className="back-imag">
+            <div>
+                <img src={Image} alt="" className="image"></img>
+            </div>
             <div className={`wrapper ${action}`}>
                 <div className="form-box login">
                     <form action="">
@@ -72,7 +75,6 @@ const Register = () => {
                     </form>
                 </div>
             </div>
-            </header>
             <Footer/>
         </div>
     )
