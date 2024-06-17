@@ -21,12 +21,12 @@ import Londonimg from './../../views/Cars/image/LonDon.jpg'
 
 
 const carData = [
-  { id: 1, model: "Honda Accord", image: carImage1, discount: "600Kms included. After that $1/km", type: "SEDAN | AC | 5 Seats ", price: 59, originalPrice: 79 },
-  { id: 2, model: " BMW", image: carImage2, discount: "600Kms included. After that $1/km", type: "Hatchback | AC | 5 Seats", price: 69, originalPrice: 89 },
-  { id: 3, model: "Tesla", image: carImage3, discount: "600Kms included. After that $1/km", type: "LUX | AC | 5 Seats", price: 79, originalPrice: 99 },
-  { id: 4, model: "Audi", image: carImage4, discount: "600Kms included. After that $1/km", type: "SUV | AC | 5 Seats", price: 89, originalPrice: 109 },
-  { id: 5, model: "Toyota Aygo", image: carImage5, discount: "600Kms included. After that $1/km", type: "SEDAN | AC | 5 Seats", price: 49, originalPrice: 69 },
-  { id: 6, model: "Ford Focus", image: carImage6, discount: "600Kms included. After that $1/km", type: "LUX | AC | 5 Seats", price: 39, originalPrice: 59 },
+  { id: 1, model: "Honda Accord", image: carImage1, discount: "60Kms included. After that $1/km", type: "SEDAN | AC | 5 Seats ", price: 59, originalPrice: 79 },
+  { id: 2, model: " BMW", image: carImage2, discount: "60Kms included. After that $1/km", type: "Hatchback | AC | 5 Seats", price: 69, originalPrice: 89 },
+  { id: 3, model: "Tesla", image: carImage3, discount: "60Kms included. After that $1/km", type: "LUX | AC | 5 Seats", price: 79, originalPrice: 99 },
+  { id: 4, model: "Audi", image: carImage4, discount: "60Kms included. After that $1/km", type: "SUV | AC | 5 Seats", price: 89, originalPrice: 109 },
+  { id: 5, model: "Toyota Aygo", image: carImage5, discount: "60Kms included. After that $1/km", type: "SEDAN | AC | 5 Seats", price: 49, originalPrice: 69 },
+  { id: 6, model: "Ford Focus", image: carImage6, discount: "60Kms included. After that $1/km", type: "LUX | AC | 5 Seats", price: 39, originalPrice: 59 },
 ];
 
 const destinationData = [
@@ -39,6 +39,8 @@ const destinationData = [
   { image: LosAngelesimg, city: 'Los Angeles', details: '10 Destinations | 5 Cars' },
   { image: Londonimg, city: 'London', details: '10 Destinations | 5 Cars' },
 ];
+
+
 
 const Cars = () => {
   return (
