@@ -1,7 +1,7 @@
 import React from 'react';
 import Navbar from '../../components/Navbar/Navbar';
 import Footer from '../../components/Footer/Footer';
-import SearchCard from '../../components/searchCard/searchCard';
+
 import "./Hotels.css"
 
 
@@ -75,7 +75,7 @@ function hotels() {
     <Navbar className="navbar" /> 
 
     <div  className='background-img'>
-    <SearchCard/>
+  
       
     </div>
 
