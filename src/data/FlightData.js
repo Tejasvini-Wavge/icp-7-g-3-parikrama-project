@@ -19,6 +19,5 @@ const FlightData = [
         discount: "30% off",
         date: "valid 28 june 2024"
     },
-] 
-
+] ;
 export {FlightData}

@@ -31,6 +31,8 @@ function Flights() {
         }
       </div>
 
+      <h1>Explore Top Domestic Routes</h1>
+
       <Footer />
     </>
   )
