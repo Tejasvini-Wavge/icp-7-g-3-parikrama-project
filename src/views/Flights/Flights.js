@@ -41,9 +41,9 @@ function Flights() {
               img,
               location,
               tripdays,
-              rs
+              from
             } = locationObject
-            return (<LocationCard img={img} location={location} tripdays={tripdays} rs={rs} />)
+            return (<LocationCard img={img} location={location} tripdays={tripdays} from={from} />)
 
           })
         }

@@ -1,16 +1,28 @@
-.location-card{
+.location-card {
     height: 370px;
     width: 330px;
     margin: 10px;
-    box-shadow: 1px 1px 2px gray;
+    border: 1px dashed black;
     position: relative;
 }
 
-.location-image{
+.location-image {
     width: 330px;
+    height: 210px;
     cursor: pointer;
 }
 
-.location{
-    padding: 7px 20px;
+.location-img:hover {
+    transform: scale(1.0);
+    transition: 1s;
+}
+
+.location {
+    padding: 10px 20px;
+}
+
+.from {
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
 }
