@@ -30,7 +30,7 @@ const carData = [
 ];
 
 const destinationData = [
-  { image: chicagoimg, city: 'Chicago', details: '10 Destinations | 5 Cars' },
+  { image: chicagoimg, city: 'Chicago', details: '5 Destinations | 10 Cars' },
   { image: SanDiegoimg, city: 'San Diego', details: '10 Destinations | 5 Cars' },
   { image: Lasvegasimg, city: 'Las vegas', details: '10 Destinations | 5 Cars' },
   { image: NewYorkimg, city: 'New York', details: '10 Destinations | 5 Cars' },
