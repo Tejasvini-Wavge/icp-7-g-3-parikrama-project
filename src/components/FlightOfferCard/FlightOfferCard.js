@@ -7,7 +7,7 @@ function FlightOfferCard({logo,title, discount, date }) {
     <img src={logo} className='offer-logo'/>
     <h1 className='text'>{discount}</h1>
     <p className='text'>{title}</p>
-    <h2 className='text'>{date}</h2>
+    <h2 className='text'>valid : {date}</h2>
   </div>
   </>
     
