@@ -49,6 +49,8 @@ function Flights() {
         }
       </div>
 
+      <h1>Browse Popular Destinations</h1>
+
 
       <div className="reviews-container">
         <h1>Loving Reviews By Our Customers</h1>

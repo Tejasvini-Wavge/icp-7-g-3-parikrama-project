@@ -46,5 +46,9 @@ const LocationData= [
         tripdays: "Round trip | 3 days",
         from: "US$389"
     }
+];
+
+const DestinationData = [
+
 ]
-export {FlightData, LocationData}
+export {FlightData, LocationData, DestinationData}
