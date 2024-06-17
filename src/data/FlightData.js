@@ -20,4 +20,13 @@ const FlightData = [
         date: "valid 28 june 2024"
     },
 ] ;
-export {FlightData}
+
+const LocationData= [
+    {
+        img: "https://shreethemes.net/geotrip-live/geotrip/assets/img/destination/tr-1.jpg",
+        location: "New York 🔛 Los Angeles",
+        tripdays : "Round-trip | 3 days",
+        from: "US$492"
+    }
+]
+export {FlightData, LocationData}
