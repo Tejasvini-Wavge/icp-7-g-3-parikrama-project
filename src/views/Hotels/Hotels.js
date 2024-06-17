@@ -16,6 +16,13 @@ import airIndiaLogo from './img/flt-2.webp';
 import malaysiaAirlinesLogo from './img/flt-1.webp';
 
 
+import city1 from './img/newyork.jpg';
+import city2 from './img/New2.jpg';
+import city3 from './img/New3.jpg';
+import city4 from './img/new4.jpg';
+
+
+
 
 function hotels() {
   const properties = [
@@ -160,6 +167,44 @@ function hotels() {
         ))}
       </div>
       <button className="more">More</button>
+    </div>
+
+
+
+
+    <div className="container">
+      <div className="card-city">
+        <img src={city2} alt="Destination" className="card-img-top" />
+        <div className="card-body">
+          <h5 className="card-title">PARIS</h5>
+          <p className="card-text">10 Destination |5 Hotels</p>
+          <a href="#" className="btn ">Read More</a>
+        </div>
+      </div>
+      <div className="card-city">
+        <img src={city3} alt="Journey" className="card-img-top" />
+        <div className="card-body">
+          <h5 className="card-title">NEW-YORK</h5>
+          <p className="card-text">10 Destination |5 Hotels</p>
+          <a href="#" className="btn ">Read More</a>
+        </div>
+      </div>
+      <div className="card-city">
+        <img src={city1} alt="Business" className="card-img-top" />
+        <div className="card-body">
+          <h5 className="card-title">DUBAI</h5>
+          <p className="card-text">10 Destination |5 Hotels</p>
+          <a href="#" className="btn ">Read More</a>
+        </div>
+      </div>
+      <div className="card-city">
+        <img src={city4} alt="Business" className="card-img-top" />
+        <div className="card-body">
+          <h5 className="card-title">San Jose</h5>
+          <p className="card-text">10 Destination |5 Hotels</p>
+          <a href="#" className="btn ">Read More</a>
+        </div>
+      </div>
     </div>
 
 
