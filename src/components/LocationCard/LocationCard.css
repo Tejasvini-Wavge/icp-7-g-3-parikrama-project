@@ -1,8 +1,9 @@
 .location-card {
-    height: 360px;
+    height: 370px;
     width: 330px;
     margin: 10px;
-    border: 1px dashed black;
+    
+    border: 1px solid #a4a3a3;
     position: relative;
 }
 
@@ -10,7 +11,7 @@
     display: block;
     margin: 0 auto;
     width: 330px;
-    height: 210px;
+    height: 230px;
     cursor: pointer;
 }
 
