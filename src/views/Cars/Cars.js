@@ -10,7 +10,7 @@ import carImage4 from './../Cars/image/audi.jpg';
 import carImage5 from './../Cars/image/Toyota Aygo.jpg';
 import carImage6 from './../Cars/image/Ford Focus.jpg';
 
-import chicagoimg from './../../views/Cars/image/chicago.jpg'
+import chicagoimg from './../Cars/image/Chicago.jpg'
 import SanDiegoimg from './../../views/Cars/image/SanDiego.jpg'
 import Lasvegasimg from './../../views/Cars/image/Lasvegas.jpg'
 import NewYorkimg from './../../views/Cars/image/newyork.jpg'
