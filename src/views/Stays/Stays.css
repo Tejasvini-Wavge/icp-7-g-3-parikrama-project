@@ -21,6 +21,11 @@
   flex-wrap: wrap;
   justify-content: center;
   padding: 20px;}
+
+  .review-container{
+    margin: 20px;
+  }
+
 /* }
 
 .search-bar {

@@ -1,12 +1,5 @@
-/* General Styles */
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
+
   
-  /* Benefits Section Styles */
   .benefits-container {
     display: flex;
     flex-wrap: wrap;
@@ -24,7 +17,7 @@ body {
     width: calc(100% - 40px);
     max-width: 350px;
     margin: 10px 40px;
-    text-align: center; /* Center align text and icon */
+    text-align: center; 
   }
   
   .benefit-card:hover {
@@ -33,9 +26,9 @@ body {
   }
   
   .icon {
-    width: 80px; /* Set icon size */
+    width: 80px; 
     height: auto;
-    margin: 20px auto; /* Center the icon */
+    margin: 20px auto; 
   }
   
   .benefit-content {
@@ -58,7 +51,6 @@ body {
     line-height: 1.6;
   }
   
-  /* Responsive Styles */
   @media (min-width: 600px) {
     .benefit-card {
       width: calc(50% - 40px);
