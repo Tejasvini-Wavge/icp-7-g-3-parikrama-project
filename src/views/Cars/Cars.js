@@ -2,6 +2,7 @@ import React from 'react';
 import Navbar from '../../components/Navbar/Navbar';
 import Footer from '../../components/Footer/Footer';
 import './../../views/Cars/Cars.css';
+import SearchCard from '../../components/searchCard/searchCard'
 
 import carImage1 from './../Cars/image/accord.jpg';
 import carImage2 from './../Cars/image/BMW.jpg';
@@ -47,18 +48,9 @@ const Cars = () => {
     <>
       <Navbar className="navbar" /> 
       <div className="cars-container">
-        <header className="header">
-          <div className="header-content">
-            <h1>Starts Your Trip with GeoTrip</h1>
-            <p>Take a little break from the work stress of everyday. Discover plan trip and explore beautiful destinations.</p>
-            <div className="search-box">
-              <input type="text" placeholder="Select Pickup Location" />
-              <input type='date' placeholder='choose date' />
-              <input type="text" placeholder="Select drop Location" />
-              <button>Search</button>
-            </div>
-          </div>
-        </header>
+      <div className='car-background'>
+        <SearchCard />
+      </div>
         <section className="deals">
           <div className="deal-card">
             <div className="discount">20% Off</div>
