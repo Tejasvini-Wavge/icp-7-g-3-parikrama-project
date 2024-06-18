@@ -5,6 +5,8 @@ import SearchCard from '../../components/searchCard/searchCard';
 import './Stays.css';
 import OfferCard from '../../components/travelOfferCards/offerCard';
 import Intro from '../../components/introCard/intro';
+import News from '../../components/news/news';
+import { Link } from 'react-router-dom';
 
 function Stays() {
   return (
@@ -16,6 +18,10 @@ function Stays() {
       <Intro/>
       <div className='offer-card-container'>
         <OfferCard />
+      </div>
+      <div className='News'>
+        <p className='news-heading'>Latest from our news</p>
+      <Link to='/newsDisplay:/id' className='link-News'><News/></Link>
       </div>
       <Footer className="footer" />
     </>
