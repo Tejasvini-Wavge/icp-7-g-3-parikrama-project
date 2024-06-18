@@ -1,6 +1,6 @@
 <div align="center">
 	<h1>Parikrama</h1>
-    <img src="./image-readme/Screenshot (170).png" height="100" width="100">
+    <img src="./image-readme/Screenshot (170).png" height="50%" width="100%">
 </div>
 
 A web application made using HTML, CSS, JavaScripts, Reactjs.	
