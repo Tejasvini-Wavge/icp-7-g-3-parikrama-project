@@ -1,3 +1,4 @@
+
 .background {
   background-image: url('./banner-stay.jpg');
   background-size: cover;
@@ -9,6 +10,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding-top: 0px; /* Ensure space for sticky navbar */
 }
 
 .offer-card-container {
@@ -51,3 +53,8 @@
     flex: none;
   }
 }
+
+
+
+
+
