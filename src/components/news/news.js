@@ -1,20 +1,18 @@
 import React from 'react';
-import newsData from './newsData';
+import { Link } from 'react-router-dom';
 import './news.css';
 
-function News() {
+function News({ id, blogImg, title, date }) {
   return (
-    <div className='news-container'>
-      {newsData.map((element) => (
-        <div key={element.id} className='news-card'>
-          <img alt='blog' className='blog-img' src={element.blogImg} />
-          <div className='news-card-content'>
-            <h3>{element.title}</h3>
-            <p>{element.date}</p>
-          </div>
+    <Link className='news-link' to={`/newsDisplay/${id}`}>
+      <div className='news-card'>
+        <img alt='blog' className='blog-img' src={blogImg} />
+        <div className='news-card-content'>
+          <h3>{title}</h3>
+          <p>{date}</p>
         </div>
-      ))}
-    </div>
+      </div>
+    </Link>
   );
 }
 

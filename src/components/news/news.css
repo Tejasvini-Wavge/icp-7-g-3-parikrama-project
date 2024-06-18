@@ -56,7 +56,9 @@
   .news-card:hover .news-about {
     color: #333;
   }
-  
+  .news-link{
+    text-decoration: none;
+  }
   /* Media queries for responsiveness */
   @media (max-width: 768px) {
     .news-card {

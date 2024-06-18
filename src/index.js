@@ -7,6 +7,7 @@ import Home from './views/Stays/Stays';
 import Cars from './views/Cars/Cars';
 import Rental from './views/Rental/Rental';
 import Flights from './views/Flights/Flights';
+import NewsDisplay from './components/news/newsDisplay';
 
 
 
@@ -39,7 +40,12 @@ const router = createBrowserRouter([
     {
         path:"/Hotels",
         element:<Hotels/>
+    },
+    {
+      path:"/newsDisplay/:id",
+      element:<NewsDisplay/>
     }
+
 ]);
 root.render(<RouterProvider router={router}/>
 );

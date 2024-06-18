@@ -1,36 +1,41 @@
 .selected-blog {
     max-width: 800px;
-    margin: 0 auto;
+    margin: 20px auto;
     padding: 20px;
-    background-color: #fff;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background: #fff;
     border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   }
   
   .selected-blog h1 {
-    font-size: 2.5rem;
-    margin-bottom: 10px;
+    font-size: 2.5em;
+    margin-bottom: 20px;
   }
   
   .data {
-    color: #888;
-    margin-bottom: 10px;
-    font-size: 0.9rem;
+    font-size: 1em;
+    margin-bottom: 20px;
   }
   
-  .data span {
-    margin: 0 5px;
+  .cate {
+    font-weight: bold;
+    color: #C80036;
+  }
+  
+  .date {
+    color: #555;
   }
   
   .blog-image {
     width: 100%;
     height: auto;
-    margin-bottom: 20px;
     border-radius: 8px;
+    margin-bottom: 20px;
   }
   
   .content {
+    font-size: 1.2em;
     line-height: 1.6;
-    color: #444;
+    color: #333;
   }
   
