@@ -3,9 +3,10 @@ import './Flights.css'
 import Navbar from '../../components/Navbar/Navbar'
 import Footer from '../../components/Footer/Footer'
 import SearchCard from '../../components/searchCard/searchCard'
-import { FlightData, LocationData } from '../../data/FlightData'
+import { DestinationData, FlightData, LocationData } from '../../data/FlightData'
 import FlightOfferCard from '../../components/FlightOfferCard/FlightOfferCard'
 import LocationCard from '../../components/LocationCard/LocatinCard'
+import DestinationCard from '../../components/DestinationCard/DestinationCard'
 
 
 function Flights() {
@@ -50,6 +51,20 @@ function Flights() {
       </div>
 
       <h1>Browse Popular Destinations</h1>
+
+      <div className='destination-card-container'>
+        {
+          DestinationData.map((destinationObject, i) => {
+            const {
+              img,
+              location,
+              detailedInfo,
+            } = destinationObject
+            return (<DestinationCard img={img} location={location}  detailedInfo={detailedInfo}/>)
+
+          })
+        }
+      </div>
 
 
       <div className="reviews-container">
