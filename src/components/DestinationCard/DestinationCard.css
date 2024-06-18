@@ -18,12 +18,16 @@
 .explore-btn{
     background-color: black;
     color: white;
+    font-size: 15px;
     padding: 10px 30px;
     margin-left: 15px;
     border-radius: 10px;
     border: none;
+    cursor: pointer;
 }
 
 .explore-btn:hover{
     box-shadow: 1px 1px 2px black;
+    background-color: white;
+    color: rgb(11, 1, 1);
 }

@@ -8,7 +8,9 @@ function DestinationCard({ img, location, detailedInfo }) {
             <img src={img} className='destination-img' />
             <p className='destination'>{detailedInfo}</p>
             <h2 className='destination'>{location}</h2>
-            <button type='button' className='explore-btn'>Discover</button>
+            
+            <button className='explore-btn'>Discover</button>
+            
         </div>
     </>)
 }
