@@ -9,34 +9,7 @@
   justify-content: center;
 }
 
-.heading-text{
-    align-items: center;
-    text-align: center;
-    margin-top:10px;
-    color:white;
-    font-size: 30px;
-}
 
-.heading-hotels{
-    color: solid black;
-    text-align: center;
-    font-size: 40px;
-}
-
-
-.card{
-
-    display:inline-block;
-    height:400px;
-    width:300px;
-    border:5px solid black;
-    
-
-}
-.description{
-    padding-left:10px;
-    padding-right:10px;
-}
 
 
 .container{
