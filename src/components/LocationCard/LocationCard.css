@@ -15,6 +15,11 @@
     cursor: pointer;
 }
 
+.location-image:hover{
+    transform: translateY(-5px);
+    box-shadow: 2px 2px 5px gray;
+}
+
 .location {
     padding: 8px 20px;
 }

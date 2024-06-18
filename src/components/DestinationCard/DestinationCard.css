@@ -11,6 +11,11 @@
     width: 340px;
 }
 
+.destination-img:hover{
+    transform: translateY(-5px);
+    box-shadow: 2px 2px 5px gray;
+}
+
 .destination{
     margin: 15px;
 }
