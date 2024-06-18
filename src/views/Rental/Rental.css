@@ -573,7 +573,11 @@ padding-right: 2rem;
 .subtitle {
   font-size: 1.5em;
   margin-bottom: 20px;
+  color: #ffffff;
+  
 }
+
+
 
 .form {
   display: flex;
