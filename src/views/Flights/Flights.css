@@ -12,4 +12,12 @@
 .offer-card{
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
 }
+
+.location-card-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+

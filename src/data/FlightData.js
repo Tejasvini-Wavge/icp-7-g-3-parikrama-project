@@ -27,6 +27,28 @@ const LocationData= [
         location: "New York 🔛 Los Angeles",
         tripdays : "Round-trip | 3 days",
         from: "US$492"
+    },
+    {
+        img: "https://shreethemes.net/geotrip-live/geotrip/assets/img/destination/tr-2.jpg",
+        location: "New York 🔛 Los Angeles",
+        tripdays: "Round trip | 3 days",
+        from: "US$434"
+    },
+    {
+        img: "https://shreethemes.net/geotrip-live/geotrip/assets/img/destination/tr-3.jpg",
+        location: "New York 🔛 Los Angeles",
+        tripdays: "Round trip | 3 days",
+        from: "US$489"
+    },
+    {
+        img: "https://shreethemes.net/geotrip-live/geotrip/assets/img/destination/tr-6.jpg",
+        location: "New York 🔛 Los Angeles",
+        tripdays: "Round trip | 3 days",
+        from: "US$389"
     }
+];
+
+const DestinationData = [
+
 ]
-export {FlightData, LocationData}
+export {FlightData, LocationData, DestinationData}
