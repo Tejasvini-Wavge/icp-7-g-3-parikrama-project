@@ -1,12 +1,15 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Navbar from '../../components/Navbar/Navbar';
 import Footer from '../../components/Footer/Footer';
+import SearchCard from '../../components/searchCard/searchCard'
+
 import butterfly from './Rental.css';
 
 import image1 from './images/img-1.jpg';
 import image2 from './images/img2.jpg';
 import image3 from './images/img-3.jpg';
 import image4 from './images/img-5.jpg';
+import image5 from './images/img-4.jpg';
 
 import citilinkLogo from './images/flt-3.webp';
 import goibiboLogo from './images/goibibo.webp';
@@ -22,82 +25,57 @@ import icon1 from './images/1.png'
 import icon2 from './images/app.png'
 import icon3 from './images/apple-logo.png'
 
-import vimg1 from './images/vishnu (1).jpg';
-import vimg2 from './images/vishnu (2).jpg';
-import vimg3 from './images/vishnu (3).jpg';
-import vimg4 from './images/vishnu (4).jpg';
+import bkImg from './images/contact-bg-image.png'
+import icon4 from './images/Untitled design.png';
+
+import { rentalData , HouseData } from '../../data/rentalData'
+
 function Rental() {
+
+const [rentalProperties, setRentalProperties] = useState(rentalData);
+const [rentalList, setRentalList] = useState(HouseData);
+
+
+const [name, setName] = useState('');
+const [email, setEmail] = useState('');
+const [phone, setPhone] = useState('');
+const [message, setMessage] = useState('');
+
+const handleSubmit = (event) => {
+  event.preventDefault();
+  console.log('Form submitted:', { name, email, phone, message });
+};
 
   return (
     <>
-    <Navbar className="navbar" /> 
 
-    <div className="container-banner">
-      <div className="card-container-banner">
-        <div className="card-banner">
-          <div className="card-header-banner">Where</div>
-          <div className="card-content-banner">
-            <input type="text" placeholder="Going To" />
-          </div>
-        </div>
-
-        <div className="card-banner">
-          <div className="card-header-banner">Choose Date</div>
-          <div className="card-content-banner">
-            <input type="text" placeholder="Check-In & Check-Out" />
-          </div>
-        </div>
-
-        <div className="card-banner">
-          <div className="card-header-banner">Members</div>
-          <div className="card-content-banner">
-            <p>2 Adults</p>
-          </div>
-        </div>
-
-        <div className="card-button-banner">
-          <button className="search-button-banner">
-            <span className="search-text-banner">Search</span>
-          </button>
-        </div>
+<Navbar className="navbar" /> 
+<div className='background-banner'>
+        <SearchCard />
       </div>
-    </div>
 
     <hr></hr>
 
-    <div className="container-location">
-      <h1 className="heading-location">Explore Apartment By Location</h1>
-      <div className="cards-container-location">
-        <div className="card-location">
-          <img className="location-image" src={vimg1} alt="Apartment in Helsinki" />
-          <div className="card-info-location">
-            <p className="location-city">Location</p>
-            <p className="city-location">Helsinki, Finland</p>
+    <div className="rental-container">
+      <h1 className="rental-title">Available Rental Properties</h1>
+      <div className="rental-grid">
+        {rentalProperties.map((property) => (
+          <div key={property.id} className="rental-card">
+            <img src={property.imageUrl} alt={property.title} className="rental-image" />
+            <h2 className="rental-title">{property.title}</h2>
+            <p className="rental-description">{property.description}</p>
+            <div className="rental-details">
+              <p className="rental-price">${property.price}/month</p>
+              <p className="rental-bedrooms">{property.bedrooms} Bedrooms</p>
+              <p className="rental-bathrooms">{property.bathrooms} Bathrooms</p>
+            </div>
+            <button className="rental-button">View Details</button>
           </div>
-        </div>
-        <div className="card-location">
-          <img className="location-image" src={vimg2} alt="Apartment in Rotterdam" />
-          <div className="card-info-location">
-            <p className="location-city">Location</p>
-            <p className="city-location">Rotterdam, Netherlands</p>
-          </div>
-        </div>
-        <div className="card-location">
-          <img className="location-image" src={vimg3} alt="Apartment in Madrid" />
-          <div className="card-info-location">
-            <p className="location-city">Location</p>
-            <p className="city-location">Madrid, Spain</p>
-          </div>
-        </div>
-        <div className="card-location">
-          <img className="location-image" src={vimg4} alt="Apartment in Verona" />
-          <div className="card-info-location">
-            <p className="location-city">Location</p>
-            <p className="city-location">Verona, Italy</p>
-          </div>
-        </div>
+        ))}
       </div>
     </div>
+
+  
 
     <hr></hr>
    
@@ -153,150 +131,91 @@ function Rental() {
 
     <hr></hr>
 
-    <div className="app">
-      <div className="container1">
-        <h1>Explore Hot Rental Properties</h1>
-        <div className="properties">
-          <div className="property">
-            <div className="image">
-              <img src={image1} alt="House" />
+   
+    <div className="rental-container">
+      <h1 className="rental-heading">Explore Hot Rental Properties</h1>
+      <div className="rental-cards">
+        {rentalList.map((rental, index) => (
+          <div key={index} className="rental-card">
+            <div className="rental-card-image">
+              <img src={rental.image} alt={rental.title} />
             </div>
-            <div className="info">
-              <h2>House</h2>
-              <h3>Apogee Property Advisors</h3>
-              <div className="details">
-                <div>3 Beds</div>
-                <div>2 Baths</div>
-                <div>2100 sqft</div>
-                <div>1 Store</div>
+            <div className="rental-card-content">
+              <h2 className="rental-card-title">{rental.title}</h2>
+              <div className="rental-card-details">
+                <p className="rental-card-details-item">
+                  {rental.beds} Beds
+                </p>
+                <p className="rental-card-details-item">
+                  {rental.baths} Baths
+                </p>
+                <p className="rental-card-details-item">
+                  {rental.sqft} sqft
+                </p>
+                <p className="rental-card-details-item">
+                  {rental.store} Store
+                </p>
               </div>
-              <div className="price">
-                <span className="discount1">15% Off</span>
-                <span className="amount">From US$492</span>
+              <div className="rental-card-price">
+                <span className="rental-card-price-off">15% Off</span>
+                <p className="rental-card-price-amount">
+                  From US${rental.price}
+                </p>
               </div>
-              <div className="rating">
-                <span>★★★★★</span>
-                <span>4.6 (142 Reviews)</span>
-              </div>
-            </div>
-          </div>
-          <div className="property">
-            <div className="image">
-              <img src={image2} alt="Villa" />
-            </div>
-            <div className="info">
-              <h2>Villa</h2>
-              <h3>Haven Group Real Estate</h3>
-              <div className="details">
-                <div>3 Beds</div>
-                <div>2 Baths</div>
-                <div>2100 sqft</div>
-                <div>1 Store</div>
-              </div>
-              <div className="price">
-                <span className="discount1">15% Off</span>
-                <span className="amount">From US$492</span>
-              </div>
-              <div className="rating">
-                <span>★★★★★</span>
-                <span>4.6 (142 Reviews)</span>
+              <div className="rental-card-rating">
+                <span className="rental-card-rating-stars">★★★★★</span>
+                <span className="rental-card-rating-count">
+                  {rental.rating} ({rental.reviews} Reviews)
+                </span>
               </div>
             </div>
           </div>
-          <div className="property">
-            <div className="image">
-              <img src={image3} alt="Apartment" />
-            </div>
-            <div className="info">
-              <h2>Apartment</h2>
-              <h3>Larkspur Partners Realty</h3>
-              <div className="details">
-                <div>3 Beds</div>
-                <div>2 Baths</div>
-                <div>2100 sqft</div>
-                <div>1 Store</div>
-              </div>
-              <div className="price">
-                <span className="discount1">15% Off</span>
-                <span className="amount">From US$492</span>
-              </div>
-              <div className="rating">
-                <span>★★★★★</span>
-                <span>4.6 (142 Reviews)</span>
-              </div>
-            </div>
-          </div>
-
-          <div className="property">
-            <div className="image">
-              <img src={image4} alt="Apartment" />
-            </div>
-            <div className="info">
-              <h2>Apartment</h2>
-              <h3>Larkspur Partners Realty</h3>
-              <div className="details">
-                <div>3 Beds</div>
-                <div>2 Baths</div>
-                <div>2100 sqft</div>
-                <div>1 Store</div>
-              </div>
-              <div className="price">
-                <span className="discount1">15% Off</span>
-                <span className="amount">From US$492</span>
-              </div>
-              <div className="rating">
-                <span>★★★★★</span>
-                <span>4.6 (142 Reviews)</span>
-              </div>
-            </div>
-          </div>
-
-         
-
-          
-        </div>
-        <button className="more">More</button>
+        ))}
       </div>
+      <button className="more-button">More</button>
     </div>
-
 
 
 <hr></hr>
-
-    <div className="container">
-      <div className="card-city">
-        <img src={city2} alt="Destination" className="card-img-top" />
-        <div className="card-body">
-          <h5 className="card-title">PARIS</h5>
-          <p className="card-text">Make Your Next Journey Delhi To Paris in Comfirtable And Best Price</p>
-          <a href="#" className="btn ">Read More</a>
+<div className="container3">
+     
+      <h1>Let's schedule a Visit</h1>
+      <form onSubmit={handleSubmit}>
+        <div className="form-group">
+          <label htmlFor="name">Your Name</label>
+          <input
+            type="text"
+            id="name"
+            value={name}
+            onChange={(e) => setName(e.target.value)}
+            required
+          />
         </div>
-      </div>
-      <div className="card-city">
-        <img src={city3} alt="Journey" className="card-img-top" />
-        <div className="card-body">
-          <h5 className="card-title">NEW-YORK</h5>
-          <p className="card-text">Make Your Next Journey Delhi To Paris in Comfirtable And Best Price</p>
-          <a href="#" className="btn ">Read More</a>
+        <div className="form-group">
+          <label htmlFor="email">E-mail</label>
+          <input
+            type="email"
+            id="email"
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+            required
+          />
         </div>
-      </div>
-      <div className="card-city">
-        <img src={city1} alt="Business" className="card-img-top" />
-        <div className="card-body">
-          <h5 className="card-title">DUBAI</h5>
-          <p className="card-text">Make Your Next Journey Delhi To Paris in Comfirtable And Best Price</p>
-          <a href="#" className="btn ">Read More</a>
+        <div className="form-group">
+          <label htmlFor="phone">Phone Number</label>
+          <input
+            type="tel"
+            id="phone"
+            value={phone}
+            onChange={(e) => setPhone(e.target.value)}
+            required
+          />
         </div>
-      </div>
-      <div className="card-city">
-        <img src={city4} alt="Business" className="card-img-top" />
-        <div className="card-body">
-          <h5 className="card-title">San Jose</h5>
-          <p className="card-text">Make Your Next Journey Delhi To Paris in Comfirtable And Best Price</p>
-          <a href="#" className="btn ">Read More</a>
-        </div>
-      </div>
+       
+        <button type="submit">Request Visit</button>
+      </form>
     </div>
+   
 
     <hr></hr>
 
