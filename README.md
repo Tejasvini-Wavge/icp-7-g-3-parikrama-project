@@ -1,6 +1,6 @@
 <div align="center">
 	<h1>Parikrama</h1>
-	## [Homepage of the project] (https://github.com/DARSHIKA91/flower-website-group-project-1-icp-7/blob/main/index.html) ![alt text](<img/Screenshot (170).png>)
+    <img src="./image-readme/Screenshot (170).png" height="100" width="100">
 </div>
 
 A web application made using HTML, CSS, JavaScripts, Reactjs.	
