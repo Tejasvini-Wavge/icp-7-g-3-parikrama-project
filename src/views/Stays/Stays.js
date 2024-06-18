@@ -17,6 +17,10 @@ function Stays() {
       <div className='offer-card-container'>
         <OfferCard />
       </div>
+      <div>
+        <p>Why choose us?</p>
+        
+      </div>
       <div className='news-section'>
         <p className='news-heading'>Latest from our news</p>
         <div className='news-container'>
