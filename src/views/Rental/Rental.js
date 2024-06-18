@@ -1,6 +1,8 @@
 import React, { useState } from 'react'
 import Navbar from '../../components/Navbar/Navbar';
 import Footer from '../../components/Footer/Footer';
+import SearchCard from '../../components/searchCard/searchCard'
+
 import butterfly from './Rental.css';
 
 import image1 from './images/img-1.jpg';
@@ -48,12 +50,9 @@ const handleSubmit = (event) => {
     <>
 
 <Navbar className="navbar" /> 
-<div className="background-banner">
-    
-
-     
-     
-    </div>
+<div className='background-banner'>
+        <SearchCard />
+      </div>
 
     <hr></hr>
 
