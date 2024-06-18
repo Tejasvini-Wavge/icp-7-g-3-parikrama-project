@@ -16,7 +16,7 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 const router = createBrowserRouter([
     {
         path: "/",
-        element:<Cars/>
+        element:<Home/>
     },
     {
       path: "/Flights",
@@ -28,8 +28,8 @@ const router = createBrowserRouter([
    element:<Rental/>
  },
 {
-  path: "/Stay",
-  element:<Home/>
+  path: "/Cars",
+  element:<Cars/>
 },
 
     {
