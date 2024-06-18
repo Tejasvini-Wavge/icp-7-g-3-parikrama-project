@@ -1,13 +1,97 @@
 
 
   .background-rental {
+    
+  }
+    /* -------------------------------------banner-1 ------------------------------------*/
+    .container-banner {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+
     background-image: url('./images/Untitled\ design.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     width: 100%;
-    height: 100vh; 
-  }
+    height: 90vh; 
+    }
+    
+    .card-container-banner {
+      height: 15vh; 
+      display: flex;
+      gap: 20px;
+      padding: 20px;
+      background-color: #ffffff2b ;
+      border: 1px solid #ffffff38;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+    
+    .card-banner {
+      flex: 1;
+      background-color: rgba(255, 255, 255, 0.52);
+      border-radius: 10px;
+      padding: 20px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+    
+    .card-header-banner {
+      font-weight: bold;
+      font-size: 1.2rem;
+      margin-bottom: 10px;
+    }
+    
+    .card-content-banner {
+      display: flex;
+      flex-direction: column;
+    }
+    
+    .card-content-input-banner {
+      border: 1px solid #ddd;
+      padding: 10px;
+      border-radius: 5px;
+      font-size: 1rem;
+      margin-bottom: 10px;
+    }
+    
+    .card-button-banner {
+      flex: 0.5;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    
+    .search-button-banner {
+      background-color: #dc3545;
+      color: white;
+      padding: 15px 30px;
+      border: none;
+      border-radius: 5px;
+      font-size: 1.2rem;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+    
+    .search-button-banner:hover {
+      background-color: #c82333;
+    }
+    
+    .search-icon-banner {
+      font-size: 1.5rem;
+      margin-right: 10px;
+    }
+    
+    @media (max-width: 768px) {
+      .card-container {
+        flex-direction: column;
+      }
+    
+      .card {
+        width: 100%;
+      }
+    }
   
   /* -------------------------------------------------------------------------*/
 
@@ -210,7 +294,7 @@
 
   
   
-  .container {
+  .container1 {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -549,5 +633,130 @@ input {
 @media (max-width: 768px) {
   .reviews-grid {
     grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+/*--------------------------------feature ---------------------------*/
+
+.container-feature {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+}
+
+.cards-container-feature {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 20px;
+}
+
+.card-feature {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: left;
+}
+
+.card-icon-feature {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+
+.card-icon-svg-feature {
+  width: 40px;
+  height: 40px;
+  color: #007bff;
+}
+
+.card-content-feature {
+  margin-bottom: 20px;
+}
+
+.card-content-h3-feature {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.card-content-p-feature {
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #6c757d;
+}
+
+
+@media (max-width: 768px) {
+  .cards-container-feature {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  }
+}
+/*-----------------location city ------------------------*/
+
+.container-location {
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.heading-location {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.cards-container-location {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.card-location {
+  width: 300px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+.card-img-location {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+}
+
+.location-image{
+  width: 100%;
+  height: 25vh;
+}
+
+.card-info-location {
+  padding: 15px;
+  text-align: center;
+}
+
+.location-city {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.city-location {
+  font-size: 1.2rem;
+}
+
+/* Responsive design */
+@media screen and (max-width: 768px) {
+  .card {
+    width: 100%;
   }
 }

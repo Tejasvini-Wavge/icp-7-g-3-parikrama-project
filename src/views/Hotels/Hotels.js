@@ -1,6 +1,7 @@
 import React from 'react';
 import Navbar from '../../components/Navbar/Navbar';
 import Footer from '../../components/Footer/Footer';
+
 import "./Hotels.css"
 
 
@@ -13,6 +14,13 @@ import citilinkLogo from './img/flt-3.webp';
 import goibiboLogo from './img/goibibo.webp';
 import airIndiaLogo from './img/flt-2.webp';
 import malaysiaAirlinesLogo from './img/flt-1.webp';
+
+
+import city1 from './img/newyork.jpg';
+import city2 from './img/New2.jpg';
+import city3 from './img/New3.jpg';
+import city4 from './img/new4.jpg';
+
 
 
 
@@ -74,6 +82,7 @@ function hotels() {
     <Navbar className="navbar" /> 
 
     <div  className='background-img'>
+  
       
     </div>
 
@@ -158,6 +167,107 @@ function hotels() {
         ))}
       </div>
       <button className="more">More</button>
+    </div>
+
+
+<h1>Explore Top  Destination </h1>
+
+    <div className="container">
+      <div className="card-city">
+        <img src={city2} alt="Destination" className="card-img-top" />
+        <div className="card-body">
+          <h5 className="card-title">PARIS</h5>
+          <p className="card-text">10 Destination |5 Hotels</p>
+          <a href="#" className="btn ">Read More</a>
+        </div>
+      </div>
+      <div className="card-city">
+        <img src={city3} alt="Journey" className="card-img-top" />
+        <div className="card-body">
+          <h5 className="card-title">NEW-YORK</h5>
+          <p className="card-text">10 Destination |5 Hotels</p>
+          <a href="#" className="btn ">Read More</a>
+        </div>
+      </div>
+      <div className="card-city">
+        <img src={city1} alt="Business" className="card-img-top" />
+        <div className="card-body">
+          <h5 className="card-title">DUBAI</h5>
+          <p className="card-text">10 Destination |5 Hotels</p>
+          <a href="#" className="btn ">Read More</a>
+        </div>
+      </div>
+      <div className="card-city">
+        <img src={city4} alt="Business" className="card-img-top" />
+        <div className="card-body">
+          <h5 className="card-title">San Jose</h5>
+          <p className="card-text">10 Destination |5 Hotels</p>
+          <a href="#" className="btn ">Read More</a>
+        </div>
+      </div>
+    </div>
+
+
+
+    <div className="reviews-container">
+      <h1>Loving Reviews By Our Customers</h1>
+      <div className="reviews-grid">
+        <div className="review-card">
+          <img src="https://randomuser.me/api/portraits/men/75.jpg" alt="Aman Diwakar" className="review-avatar" />
+          <div className="review-info">
+            <h2>Aman Diwakar</h2>
+            <p>United States</p>
+            <div className="review-rating">
+              <span className="star">★★★★★</span>
+            </div>
+            <p className="review-text">excellent </p>
+          </div>
+        </div>
+        <div className="review-card">
+          <img src="https://randomuser.me/api/portraits/men/76.jpg" alt="Kunal M. Thakur" className="review-avatar" />
+          <div className="review-info">
+            <h2>Kunal M. Thakur</h2>
+            <p>United States</p>
+            <div className="review-rating">
+              <span className="star">★★★★★</span>
+            </div>
+            <p className="review-text">excellent </p>
+          </div>
+        </div>
+        <div className="review-card">
+          <img src="https://randomuser.me/api/portraits/women/75.jpg" alt="Divya Talwar" className="review-avatar" />
+          <div className="review-info">
+            <h2>Divya Talwar</h2>
+            <p>United States</p>
+            <div className="review-rating">
+              <span className="star">★★★★★</span>
+            </div>
+            <p className="review-text">excellent </p>
+          </div>
+        </div>
+        <div className="review-card">
+          <img src="https://randomuser.me/api/portraits/men/77.jpg" alt="Karan Maheshwari" className="review-avatar" />
+          <div className="review-info">
+            <h2>Karan Maheshwari</h2>
+            <p>United States</p>
+            <div className="review-rating">
+              <span className="star">★★★★★</span>
+            </div>
+            <p className="review-text">excellent </p>
+          </div>
+        </div>
+        <div className="review-card">
+          <img src="https://randomuser.me/api/portraits/women/76.jpg" alt="Ritika Mathur" className="review-avatar" />
+          <div className="review-info">
+            <h2>Ritika Mathur</h2>
+            <p>United States</p>
+            <div className="review-rating">
+              <span className="star">★★★★★</span>
+            </div>
+            <p className="review-text">excellent </p>
+          </div>
+        </div>
+      </div>
     </div>
 
     
