@@ -21,3 +21,8 @@
     flex-wrap: wrap;
 }
 
+.destination-card-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
