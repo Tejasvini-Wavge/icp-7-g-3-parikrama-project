@@ -50,7 +50,7 @@ function Flights() {
         }
       </div>
 
-      <h1>Browse Popular Destinations</h1>
+      <h1 className='heading'>Browse Popular Destinations</h1>
 
       <div className='destination-card-container'>
         {

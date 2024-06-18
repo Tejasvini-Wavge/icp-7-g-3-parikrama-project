@@ -26,8 +26,8 @@
     display: block;
     margin: 0 auto;
   }
-  
-@media (max-width: 992px)  {
+
+@media (max-width: 992px )  {
     .heading{
         font-size: 35px;
     }
@@ -36,6 +36,12 @@
 @media (max-width: 768px)  {
     .heading{
         font-size: 30px;
+    }
+}
+
+@media (max-width: 567)  {
+    .heading{
+        font-size: 25px;
     }
 }
 .location-card-container{
