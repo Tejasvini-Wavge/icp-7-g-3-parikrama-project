@@ -11,7 +11,7 @@ function Stays() {
   return (
     <>
       <Navbar className="navbar" />
-      <div className='background'>
+      <div className='background-stay'>
         <SearchCard />
       </div>
       <div className='offer-card-container'>
