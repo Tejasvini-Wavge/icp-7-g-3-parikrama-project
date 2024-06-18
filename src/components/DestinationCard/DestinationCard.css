@@ -1,0 +1,29 @@
+.dest-card{
+    height: 580px ;
+    width: 340px;
+    box-shadow: 2px 2px 5px gray;
+    padding-bottom: 20px;
+    margin: 10px;   
+}
+
+.destination-img{
+    height: 440px;
+    width: 340px;
+}
+
+.destination{
+    margin: 15px;
+}
+
+.explore-btn{
+    background-color: black;
+    color: white;
+    padding: 10px 30px;
+    margin-left: 15px;
+    border-radius: 10px;
+    border: none;
+}
+
+.explore-btn:hover{
+    box-shadow: 1px 1px 2px black;
+}
