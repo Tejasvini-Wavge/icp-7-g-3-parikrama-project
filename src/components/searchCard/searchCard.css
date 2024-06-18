@@ -5,22 +5,19 @@
     padding: 20px;
     border-radius: 10px;
     margin-bottom: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+  
     width: 80%;
-    height: 100vh; /* Full viewport height */
+    
   }
   
   .search-card-text {
     margin: 100px auto;
     text-align: center;
-    background: rgba(0, 0, 0, 0.5); /* Semi-transparent background for better readability */
+    background: rgba(0, 0, 0, 0.5); 
     padding: 20px;
     border-radius: 10px;
     color: white;
-    z-index: 10; /* Ensure it stays on top */
+    z-index: 10; 
   }
   
   .search-card-text h3 {
@@ -66,10 +63,11 @@
   .search-bar .members-input-label {
     margin-left: 10px;
   }
+  .date-input{
+    width: 100px;
+  }
   
-  .search-bar input {
-    padding: 10px;
-    margin: 10px;
+  .search-bar input{
     border-radius: 10px;
     border: 1px solid #ddd;
     flex: 1;
@@ -96,8 +94,12 @@
     .search-card-container {
       height: auto;
       padding: 10px;
+      margin-top: 70%;
     }
-  
+
+    .search-card-text {
+      margin: 10px auto;
+    }
     .search-bar {
       flex-direction: column;
       align-items: stretch;
