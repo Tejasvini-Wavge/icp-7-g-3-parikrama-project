@@ -90,7 +90,7 @@ const Cars = () => {
         </section>
         <section className="vehicles">
           <h2>Our Awesome Vehicles</h2>
-          <p>Cicero famously orated against his political opponent Lucius Sergius Catilina.</p>
+          <p>  Embark on unforgettable journeys with Our Awesome Vehicles, ensuring comfort, reliability, and style on every adventure.</p>
           <div className="vehicles-row">
             {carData.map(car => (
               <div className="vehicle-card" key={car.id}>
@@ -121,7 +121,7 @@ const Cars = () => {
         </section>
         <section className="trending-destinations">
           <h2>Trending Destinations For Stay</h2>
-          <p>Cicero famously orated against his political opponent Lucius Sergius Catilina.</p>
+          <p>Discover the trending destinations for your stay, where unforgettable experiences and relaxation await.</p>
           <div className="destinations-container">
             {destinationData.map((destination, index) => (
               <div key={index} className="destination-card">
