@@ -33,7 +33,7 @@ function Flights() {
         }
       </div>
 
-      <h1>Explore Top Domestic Routes</h1>
+      <h1 className='heading'>Explore Top Domestic Routes</h1>
 
       <div className='location-card-container'>
         {
@@ -65,6 +65,18 @@ function Flights() {
           })
         }
       </div>
+
+
+      <div className="container-contact">
+      <div className="content">
+        <h1 className="title">Subscribe & Get</h1>
+        <h2 className="subtitle">Special Discount with Parikrama.com</h2>
+        <div className="form">
+          <input type="text" placeholder="Enter Your Mail!" />
+          <button className="submit">Submit</button>
+        </div>
+      </div>
+    </div>
 
 
       <div className="reviews-container">
