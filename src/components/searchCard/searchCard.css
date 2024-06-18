@@ -63,10 +63,11 @@
   .search-bar .members-input-label {
     margin-left: 10px;
   }
+  .date-input{
+    width: 100px;
+  }
   
-  .search-bar input {
-    padding: 10px;
-    margin: 10px;
+  .search-bar input{
     border-radius: 10px;
     border: 1px solid #ddd;
     flex: 1;
@@ -95,7 +96,10 @@
       padding: 10px;
       margin-top: 70%;
     }
-  
+
+    .search-card-text {
+      margin: 10px auto;
+    }
     .search-bar {
       flex-direction: column;
       align-items: stretch;

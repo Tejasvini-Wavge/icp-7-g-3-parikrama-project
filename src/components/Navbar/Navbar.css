@@ -46,6 +46,10 @@
     border-radius: 5px;
     white-space: nowrap; /* Prevent text wrapping */
   }
+  .icon-container .register-btn:hover{
+    background-color: #e65c00;
+
+  }
   
   /* Responsive adjustments */
   @media (max-width: 768px) {
@@ -88,4 +92,6 @@
       text-align: center; 
     }
   }
+  
+
   
