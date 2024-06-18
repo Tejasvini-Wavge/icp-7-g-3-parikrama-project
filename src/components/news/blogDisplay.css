@@ -20,10 +20,13 @@
   .cate {
     font-weight: bold;
     color: #C80036;
+    padding: 0 10px;
   }
   
   .date {
     color: #555;
+    padding: 0 10px;
+
   }
   
   .blog-image {
