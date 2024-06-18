@@ -134,7 +134,19 @@ const Cars = () => {
         </section>
       </div>
 
-     
+      <hr></hr>
+    <div className="container-contact">
+      <div className="content">
+        <h1 className="title">Subscribe & Get</h1>
+        <h2 className="subtitle">Special Discount with Parikrama.com</h2>
+        <div className="form">
+          <input type="text" placeholder="Enter Your Mail!" />
+          <button className="submit">Submit</button>
+        </div>
+      </div>
+    </div>
+    
+    <hr></hr>
 
       <div className="reviews-container">
       <h1>Loving Reviews By Our Customers</h1>
