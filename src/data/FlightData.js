@@ -52,13 +52,13 @@ const DestinationData = [
     {
         img: "https://shreethemes.net/geotrip-live/geotrip/assets/img/city/ct-12.png",
         location: "Los Angeles",
-        detailedInfo: "10 Hotels, 25 Flights, 17 Cars, 22 Tours "
+       detailedInfo: "10 Hotels | 25 Flights | 17 Cars | 22 Tours"
     },
 
     {
         img: "https://shreethemes.net/geotrip-live/geotrip/assets/img/city/ct-12.png",
         location: "Los Angeles",
-        detailedInfo: "10 Hotels, 25 Flights, 17 Cars, 22 Tours "
+        detailedInfo: "10 Hotels | 25 Flights | 17 Cars | 22 Tours"
     },  
 ]
 export {FlightData, LocationData, DestinationData}

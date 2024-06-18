@@ -1,14 +1,14 @@
 .dest-card{
-    height: 570px ;
-    width: 300px;
+    height: 580px ;
+    width: 340px;
     box-shadow: 2px 2px 5px gray;
     padding-bottom: 20px;
     margin: 10px;   
 }
 
 .destination-img{
-    height: 450px;
-    width: 300px;
+    height: 440px;
+    width: 340px;
 }
 
 .destination{
