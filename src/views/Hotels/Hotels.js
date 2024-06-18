@@ -3,6 +3,7 @@ import Navbar from '../../components/Navbar/Navbar';
 import Footer from '../../components/Footer/Footer';
 import SearchCard from '../../components/searchCard/searchCard'
 
+
 import "./Hotels.css"
 
 
@@ -81,12 +82,12 @@ function hotels() {
 
     <>
     <Navbar className="navbar" /> 
-
-    <div  className='background-img'>
-    <SearchCard />
+   
+    <div className='background-img'>
+     <SearchCard />
+   </div>
+    
   
-      
-    </div>
 
     <div className="container">
       <div className="card">
@@ -134,6 +135,9 @@ function hotels() {
         </div>
       </div>
     </div>
+
+
+   
 
    
 
