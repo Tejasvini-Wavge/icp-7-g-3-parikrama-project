@@ -1,6 +1,6 @@
 
-.background {
-  /* background-image: url('./banner-stay.jpg'); */
+.background-stay {
+  background-image: url('./banner-stay.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
