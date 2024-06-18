@@ -31,13 +31,13 @@ const carData = [
 
 const destinationData = [
   { image: chicagoimg, city: 'Chicago', details: '10 Destinations | 5 Cars' },
-  { image: SanDiegoimg, city: 'San Diego', details: '10 Destinations | 5 Cars' },
-  { image: Lasvegasimg, city: 'Las vegas', details: '10 Destinations | 5 Cars' },
+  { image: SanDiegoimg, city: 'San Diego', details: '7 Destinations | 5 Cars' },
+  { image: Lasvegasimg, city: 'Las vegas', details: '5 Destinations | 5 Cars' },
   { image: NewYorkimg, city: 'New York', details: '10 Destinations | 5 Cars' },
   { image: SanFranciscoimg, city: 'San Francisco', details: '10 Destinations | 5 Cars' },
-  { image: NewOrleansimg, city: 'New Orleans', details: '10 Destinations | 5 Cars' },
+  { image: NewOrleansimg, city: 'New Orleans', details: '8 Destinations | 5 Cars' },
   { image: LosAngelesimg, city: 'Los Angeles', details: '10 Destinations | 5 Cars' },
-  { image: Londonimg, city: 'London', details: '10 Destinations | 5 Cars' },
+  { image: Londonimg, city: 'London', details: '11Destinations | 5 Cars' },
 ];
 
 
@@ -90,7 +90,7 @@ const Cars = () => {
         </section>
         <section className="vehicles">
           <h2>Our Awesome Vehicles</h2>
-          <p>Cicero famously orated against his political opponent Lucius Sergius Catilina.</p>
+          <p>  Embark on unforgettable journeys with Our Awesome Vehicles, ensuring comfort, reliability, and style on every adventure.</p>
           <div className="vehicles-row">
             {carData.map(car => (
               <div className="vehicle-card" key={car.id}>
@@ -121,7 +121,7 @@ const Cars = () => {
         </section>
         <section className="trending-destinations">
           <h2>Trending Destinations For Stay</h2>
-          <p>Cicero famously orated against his political opponent Lucius Sergius Catilina.</p>
+          <p>Discover the trending destinations for your stay, where unforgettable experiences and relaxation await.</p>
           <div className="destinations-container">
             {destinationData.map((destination, index) => (
               <div key={index} className="destination-card">
@@ -134,7 +134,19 @@ const Cars = () => {
         </section>
       </div>
 
-     
+      <hr></hr>
+    <div className="container-contact">
+      <div className="content">
+        <h1 className="title">Subscribe & Get</h1>
+        <h2 className="subtitle">Special Discount with Parikrama.com</h2>
+        <div className="form">
+          <input type="text" placeholder="Enter Your Mail!" />
+          <button className="submit">Submit</button>
+        </div>
+      </div>
+    </div>
+    
+    <hr></hr>
 
       <div className="reviews-container">
       <h1>Loving Reviews By Our Customers</h1>

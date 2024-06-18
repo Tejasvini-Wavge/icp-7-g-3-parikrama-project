@@ -1,16 +1,15 @@
-
+/* General styles */
 .cars-container {
   font-family: Arial, sans-serif;
- 
 }
 
+/* Header styles */
 .header {
   text-align: center;
   background: url('./../../views/Cars/image/carbackground1.jpg') no-repeat center center;
   background-size: cover;
   padding: 50px 20px;
   color: white;
-  text-align: center;
   width: auto;
   height: 350px;
 }
@@ -32,6 +31,7 @@
   color: white;
 }
 
+/* Search box styles */
 .search-box {
   display: flex;
   justify-content: center;
@@ -49,12 +49,17 @@
   padding: 10px 20px;
   font-size: 1rem;
   color: white;
-  background-color: #e74c3c;
+  background-color: #dc3545;
   border: none;
   border-radius: 5px;
   cursor: pointer;
 }
 
+.search-box button:hover {
+  background-color: #c82333;
+}
+
+/* Deals styles */
 .deals {
   display: flex;
   justify-content: center;
@@ -86,9 +91,7 @@
 .deal-card img {
   width: 100%;
   height: auto;
-  
 }
-
 
 .deal-info {
   padding: 15px;
@@ -110,6 +113,7 @@
   color: #333;
 }
 
+/* Vehicles styles */
 .vehicles {
   padding: 20px;
   background-color: #f9f9f9;
@@ -142,7 +146,6 @@
   text-align: left;
   box-sizing: border-box;
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-
 }
 
 .vehicle-discount {
@@ -160,9 +163,6 @@
   height: auto;
   border-radius: 5px;
 }
-
-
-
 
 .vehicle-info {
   padding: 15px 0;
@@ -251,13 +251,15 @@
   margin-top: 20px;
 }
 
+.explore-more:hover {
+  background-color: #c82333;
+}
 
+/* Trending destinations styles */
 .trending-destinations {
   padding: 20px;
   background-color: #f9f9f9;
   text-align: center;
-
-  
 }
 
 .trending-destinations h2 {
@@ -291,8 +293,6 @@
   transition: transform 0.3s, box-shadow 0.3s;
 }
 
-
-
 .destination-card img {
   display: block;
   margin: 0 auto 20px; 
@@ -301,11 +301,11 @@
   object-fit: cover;
   border-radius: 5px;
 }
+
 .destination-card img:hover {
   transform: translateY(-10px);
   box-shadow: rgba(0, 0, 0, 0.2) 0px 10px 20px;
 }
-
 
 .destination-card h3 {
   margin: 10px 0 5px; 
@@ -318,24 +318,84 @@
   color: #666;
 }
 
-
+/* Media queries for responsive design */
+@media (max-width: 1024px) {
+  .deal-card,
+  .vehicle-card,
+  .destination-card {
+      width: calc(50% - 40px);
+  }
+}
 
 @media (max-width: 768px) {
+  .header-content {
+    padding: 50px 20px;
+  }
+
+  .header h1 {
+    font-size: 2rem;
+  }
+
+  .header p {
+    font-size: 1rem;
+  }
+
   .search-box {
-      flex-direction: column;
+    flex-direction: column;
   }
 
   .deals,
   .vehicles-row,
   .destinations-container {
-      flex-direction: column;
-      align-items: center;
+    flex-direction: column;
+    align-items: center;
   }
 
   .deal-card,
   .vehicle-card,
   .destination-card {
-      max-width: 90%;
+    width: 90%;
+  }
+
+  .vehicle-card,
+  .deal-card {
+    width: calc(100% - 40px);
   }
 }
 
+@media (max-width: 576px) {
+  .header-content {
+    padding: 30px 10px;
+  }
+
+  .header h1 {
+    font-size: 1.5rem;
+  }
+
+  .header p {
+    font-size: 0.9rem;
+  }
+
+  .search-box input,
+  .search-box button {
+    font-size: 0.9rem;
+    padding: 8px;
+  }
+
+  .deal-card,
+  .vehicle-card,
+  .destination-card {
+    width: 100%;
+  }
+
+  .vehicle-card,
+  .deal-card {
+    width: calc(100% - 20px);
+  }
+}
+/* Responsive design */
+@media (max-width: 768px) {
+  .reviews-grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}

@@ -2,7 +2,7 @@
     position: relative;
     width: 420px;
     height: 450px;
-    background:  #e74c3c;
+    background:  rgb(27, 25, 25);
     border-radius: 10px;
     color: white;
     display: flex;
@@ -10,6 +10,8 @@
     overflow: hidden;
     transition: height .2s ease;
     margin-left: 450px;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 .wrapper.active{
     height: 520px;
@@ -78,26 +80,26 @@ form .remember-forgot {
     margin-right: 4px;
 }
 
-.remember-forgot Link {
+.remember-forgot .Forgot {
     color: #fff;
     text-decoration: none;
 }
 
-.remember-forgot Link:hover{
+.remember-forgot .Forgot:hover{
     text-decoration: underline;
 }
 
-form button {
+form .btn {
     width: 100%;
     height: 45px;
-    background: #fff;
+    background: #C80036;
     border: none;
     outline: none;
     border-radius: 40px;
     box-shadow: 0 0 10px rgba(0, 0, 0, .1);
     cursor:pointer;
     font-size: 16px;
-    color: #333;
+    color: white;
     font-weight: 700px;
 }
 
@@ -107,17 +109,17 @@ form .register-link {
     margin:  20px 0 15px;
 }
 
-.register-link p Link {
+.register-link p .Forgot {
     color: #fff;
     text-decoration: none;
     font-weight: 600px;
 }
 
-.register-link p Link:hover {
+.register-link p .Forgot:hover {
     text-decoration:  underline;
 }
-.image {
-    width: 100%;
-    height: 1000px;
-    padding-bottom: 10px;
-  }
+.Register-login-image {
+  background-image: url('./img/download.jpg');
+  width: auto;
+  height: auto;
+}
