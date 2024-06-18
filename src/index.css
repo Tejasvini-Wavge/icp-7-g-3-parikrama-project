@@ -6,13 +6,3 @@ body {
     font-family: sans-serif;
     font-style: normal;
   }
-  /* Set the entire page to have no margins/padding and full height */
-html, body {
-  margin: 0;
-  padding: 0;
-  height: 100%;
-  font-family: Arial, sans-serif; /* Default font-family */
-  box-sizing: border-box;
-}
-  
-  
