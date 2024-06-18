@@ -8,6 +8,7 @@ import OfferCard from '../../components/travelOfferCards/offerCard';
 import NewsData from '../../components/news/newsData';
 import Benefits from '../../components/benefitsCard/benefits';
 import Reviews from '../../components/review/review';
+import Newsletter from '../../components/newsletter/newsletter';
 
 function Stays() {
   return (
@@ -46,6 +47,9 @@ function Stays() {
       <div className='review-container'>
         <p className='news-heading'>What people Say?</p>
       <Reviews/>
+      </div>
+      <div>
+<Newsletter/>
       </div>
       <Footer className="footer" />
     </>
