@@ -13,10 +13,19 @@ function Flights() {
   return (
     <>
       <Navbar />
-
-      <div className='background-image'>
-        <SearchCard />
-      </div>
+      
+      <header className="header-1">
+          <div className="header-content">
+            <h1>Starts Your Trip with GeoTrip</h1>
+            <p>Take a little break from the work stress of everyday. Discover plan trip and explore beautiful destinations.</p>
+            <div className="search-box">
+              <input type="text" placeholder="Select Pickup Location" />
+              <input type='date' placeholder='choose date' />
+              <input type="text" placeholder="Select drop Location" />
+              <button>Search</button>
+            </div>
+          </div>
+        </header>
 
       <div className='offer-card'>
         {
