@@ -34,10 +34,10 @@ const destinationData = [
   { image: SanDiegoimg, city: 'San Diego', details: '7 Destinations | 5 Cars' },
   { image: Lasvegasimg, city: 'Las vegas', details: '5 Destinations | 5 Cars' },
   { image: NewYorkimg, city: 'New York', details: '10 Destinations | 5 Cars' },
-  { image: SanFranciscoimg, city: 'San Francisco', details: '8 Destinations | 5 Cars' },
+  { image: SanFranciscoimg, city: 'San Francisco', details: '10 Destinations | 5 Cars' },
   { image: NewOrleansimg, city: 'New Orleans', details: '8 Destinations | 5 Cars' },
   { image: LosAngelesimg, city: 'Los Angeles', details: '10 Destinations | 5 Cars' },
-  { image: Londonimg, city: 'London', details: '10 Destinations | 5 Cars' },
+  { image: Londonimg, city: 'London', details: '11Destinations | 5 Cars' },
 ];
 
 
@@ -49,7 +49,7 @@ const Cars = () => {
       <div className="cars-container">
         <header className="header">
           <div className="header-content">
-            <h1>Your journey begins with Parikrama</h1>
+            <h1>Starts Your Trip with GeoTrip</h1>
             <p>Take a little break from the work stress of everyday. Discover plan trip and explore beautiful destinations.</p>
             <div className="search-box">
               <input type="text" placeholder="Select Pickup Location" />
