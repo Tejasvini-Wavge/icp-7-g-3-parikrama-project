@@ -172,7 +172,7 @@ function hotels() {
           </div>
         ))}
       </div>
-      <button className="more">More</button>
+      <button className="more-button">More</button>
     </div>
 
 
