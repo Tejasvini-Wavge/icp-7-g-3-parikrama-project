@@ -1,6 +1,7 @@
 import React from 'react';
 import Navbar from '../../components/Navbar/Navbar';
 import Footer from '../../components/Footer/Footer';
+import SearchCard from '../../components/searchCard/searchCard'
 
 import "./Hotels.css"
 
@@ -82,6 +83,7 @@ function hotels() {
     <Navbar className="navbar" /> 
 
     <div  className='background-img'>
+    <SearchCard />
   
       
     </div>
@@ -203,6 +205,20 @@ function hotels() {
           <h5 className="card-title">San Jose</h5>
           <p className="card-text">10 Destination |5 Hotels</p>
           <a href="#" className="btn ">Read More</a>
+        </div>
+      </div>
+    </div>
+
+
+   
+    <hr></hr>
+    <div className="container-contact">
+      <div className="content">
+        <h1 className="title">Subscribe & Get</h1>
+        <h2 className="subtitle">Special Discount with Parikrama.com</h2>
+        <div className="form">
+          <input type="text" placeholder="Enter Your Mail!" />
+          <button className="submit">Submit</button>
         </div>
       </div>
     </div>

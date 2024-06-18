@@ -220,7 +220,7 @@ const handleSubmit = (event) => {
     <hr></hr>
 
     <div className="container-feature">
-      <h1>Get Our Top Rental Seavices</h1>
+      <h1>Get Our Top Rental Services</h1>
       <div className="cards-container-feature">
         <div className="card-feature">
           <div className="card-icon-feature">
@@ -271,7 +271,7 @@ const handleSubmit = (event) => {
           </div>
           <div className="card-content-feature">
             <h3>Green Spaces</h3>
-            <p>Lorem ipsum dolor elit amet enim consecte.</p>
+            <p>Lorem ipsum dolor elit amet enim consecte.</p>*
           
           </div>
         </div>

@@ -15,6 +15,35 @@
     flex-wrap: wrap;
 }
 
+.heading{
+    text-align: center;
+    font-size: 40px;
+}
+
+.review-avatar {
+    width: 100px;
+    height: 100px;
+    display: block;
+    margin: 0 auto;
+  }
+
+@media (max-width: 992px )  {
+    .heading{
+        font-size: 35px;
+    }
+}
+
+@media (max-width: 768px)  {
+    .heading{
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 567)  {
+    .heading{
+        font-size: 25px;
+    }
+}
 .location-card-container{
     display: flex;
     justify-content: center;
@@ -25,4 +54,5 @@
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    margin-bottom: 40px;
 }
