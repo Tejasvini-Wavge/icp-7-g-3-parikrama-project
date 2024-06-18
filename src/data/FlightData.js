@@ -56,9 +56,21 @@ const DestinationData = [
     },
 
     {
-        img: "https://shreethemes.net/geotrip-live/geotrip/assets/img/city/ct-12.png",
-        location: "Los Angeles",
+        img: "https://shreethemes.net/geotrip-live/geotrip/assets/img/city/ct-6.png",
+        location: "Chicago",
         detailedInfo: "10 Hotels | 25 Flights | 17 Cars | 22 Tours"
-    },  
+    },
+    
+    {
+        img: "https://shreethemes.net/geotrip-live/geotrip/assets/img/city/ct-8.png",
+        location: "Las Vegas",
+        detailedInfo: "10 Hotels | 25 Flights | 17 Cars | 22 Tours"
+    },
+
+    {
+        img: "https://shreethemes.net/geotrip-live/geotrip/assets/img/city/ct-9.png",
+        location: "New Orlean",
+        detailedInfo: "10 Hotels | 25 Flights | 17 Cars | 22 Tours"
+    },
 ]
 export {FlightData, LocationData, DestinationData}
