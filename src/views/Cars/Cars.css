@@ -4,14 +4,15 @@
 }
 
 /* Header styles */
-.header {
-  text-align: center;
-  background: url('./../../views/Cars/image/carbackground1.jpg') no-repeat center center;
+.car-background {
+  background-image: url('./../Cars/image/carbackground1.jpg');
   background-size: cover;
-  padding: 50px 20px;
-  color: white;
-  width: auto;
-  height: 350px;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
 }
 
 .header-content {
@@ -70,7 +71,7 @@
 .deal-card {
   background: white;
   border: 1.5px dashed #ddd;
-  border-radius: 5px;
+  border-radius: 10px;
   overflow: hidden;
   width: 300px;
   text-align: center;
@@ -139,7 +140,7 @@
 .vehicle-card {
   background: white;
   border: 1px solid #ddd;
-  border-radius: 5px;
+  border-radius: 10px;
   overflow: hidden;
   padding: 15px;
   width: calc(33.333% - 40px); 
@@ -147,6 +148,11 @@
   box-sizing: border-box;
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
+.vehicle-card:hover {
+  transform: translateY(-10px);
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 10px 20px;
+}
+
 
 .vehicle-discount {
   background-color: #e74c3c;
